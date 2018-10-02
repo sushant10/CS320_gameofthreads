@@ -1,7 +1,7 @@
 # CS320 File Browser
 
-Bootstrap Version: 4.1.3
-JQuery Version: 3.3.1
+**Bootstrap Version**: 4.1.3  
+**JQuery Version**: 3.3.1
 
 File structure to follow (Subject to change)
 
