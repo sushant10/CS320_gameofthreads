@@ -42,6 +42,6 @@ File structure to follow (Subject to change)
 
   
 Database Credentials:  
-    Database Name: file_browser_db  
-    User Name: db_admin  
-    Password: cs320
+      Database Name: file_browser_db  
+      User Name: db_admin  
+      Password: cs320
