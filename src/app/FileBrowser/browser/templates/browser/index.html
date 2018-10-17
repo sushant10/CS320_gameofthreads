@@ -1,9 +1,11 @@
+{% load static %}
+
 {% if file_list %}
   <table>
     <tr><th>System ID</th><th>File ID</th><tr>
     {% for file in file_list %}
       <tr>
-        <td>{{file.SystemID}}</td><td> <a href = "file:///{{ file.filePath }}"> {{file.FileID}} </a></td>
+        <td>{{file.SystemID}}</td><td> <a href = "{%static file.filePath %}" download> {{file.FileID}} </a></td>
       </tr>
     {% endfor %}
   </table>
