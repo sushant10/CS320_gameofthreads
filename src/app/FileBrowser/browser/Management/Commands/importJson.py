@@ -7,7 +7,7 @@ from browser.models import File, System
 """
 Call with 2 arguments: 'app' 'tarfolder'
 from the folder where manage.py is located searches for app/tarfolder and imports json files in that that folder
-database must be 
+database must be
 """
 
 class Command(BaseCommand):
@@ -57,26 +57,25 @@ def importJson(app, tarFolder):
         try:
             j = json.loads(fText)
             ID = (file.split('.')[0]).replace('-','')
-            print("id: %s" % ID)
             datestring = "-".join(file.split('-')[1:]).split('.')[0]
-            print(datestring)
-            dataDate = parse_date(datestring)
+            datadate = parse_date(datestring)
             systemID = file.split('-')[0]
             try:
                 sys = System.objects.get(pk = systemID)
-                createFile(ID, path, dataDate, sys)
-                print("created file with %s ID, %s path" % (ID, path))
+                #print("created file with %s ID, %s path" % (ID, path))
             except Exception as ex:
                 print(ex)
                 System.objects.create(serialNumberInserv = systemID)
                 sys = System.objects.get(pk = systemID)
-                createFile(ID, path, dataDate, sys)
+            fpath = "files" + r"/" + file
+            File.objects.update_or_create(FileID = ID,
+             defaults = { 'filePath' : fpath,'dataDate' : datadate, 'name' : file, 'SystemID' : sys} )
 
         except Exception as e:
             print(e)
 
-def createFile(ID, filepath, datadate, systemid):
-    File.objects.create(FileID = ID, filePath = filepath, dataDate = datadate, SystemID = systemid)
+def createFile(ID, filepath, datadate, Name, systemid):
+    File.objects.create(FileID = ID, filePath = filepath, dataDate = datadate, name = Name,SystemID = systemid)
 
 def createSystem(Serial, Name):
     System.objects.create(serialNumberInserv = Serial, name = Name)
