@@ -1,0 +1,212 @@
+<html>
+	<head>
+		<title>
+			Systems Page
+		</title>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="../css/base_generic.css">
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<!-- Jquery and datatables -->
+		<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="../css/dataTables.css">
+		<!-- Bootstrap core and jquery-ui JavaScript -->
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
+		<script src="../js/dataTables.min.js"></script>
+		
+		<!-- Data Tables Script -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#systemsTable').DataTable({
+					scrollY:        "400px",
+					scrollX:        true,
+					scrollCollapse: true,
+					paging:         false,
+					fixedColumns:   {
+						heightMatch: 'none'
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body style="background-color: #606b73;">
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #222325;">
+		  <a class="navbar-brand" href="#" style="color:#08C969">HPE File browser</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+			  <a class="nav-item nav-link" href="#">Systems <span class="sr-only">(current)</span></a>
+			  <a class="nav-item nav-link" href="#">Logout</a>
+			  <a class="nav-item nav-link" href="#">Help</a>
+			</div>
+		  </div>
+		</nav>
+
+		<!-- Central Card -->
+		<div id="card-container">
+			<div class="card mx-5 my-4" 
+				style="height: 40rem; text-align: center; box-shadow: 0px 10px 50px black; background-color: bbc1c4;">						
+				<div class="card-body">
+
+					<!-- My Systems Header -->
+					<h1 style="text-align: center; text-shadow: 1px 3px 2px rgba(0,0,0,0.1); color:#34305e">My Systems</h1>
+
+
+					<!-- Systems Table -->
+					<table id="systemsTable" class="table table-bordered my-5" style="width:100%; table-layout: fixed;">
+						<col width= "33.33333%">
+						<col width= "33.33333%">
+						<col width= "33.33333%">
+
+						<!-- Column Headers -->
+						<thead>
+							<tr class="table-secondary">
+								<th>File Name</th>
+								<th>Date</th> 
+								<th>Download Link</th>
+							</tr>
+						</thead>
+
+						<!-- Everything below this is a table entry -->
+						<tbody class="table-light">
+							<tr>
+								<td>1023</td>
+								<td>Fake Company 01</td> 
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>3426</td>
+								<td>Fake Company 02</td> 
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>9547</td>
+								<td>Fake Company 03</td> 
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>8345</td>
+								<td>Fake Company 04</td> 
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>5659</td>
+								<td>Fake Company 05</td> 
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>2635</td>
+								<td>Fake Company 06</td> 
+								<td>8</td>
+							</tr>
+							<tr>
+								<td>1275</td>
+								<td>Fake Company 07</td> 
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>2389</td>
+								<td>Fake Company 08</td> 
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>5639</td>
+								<td>Fake Company 09</td> 
+								<td>11</td>
+							</tr>
+							<tr>
+								<td>1039</td>
+								<td>Fake Company 10</td> 
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>6385</td>
+								<td>Fake Company 11</td> 
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>8446</td>
+								<td>Fake Company 12</td> 
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>7238</td>
+								<td>Fake Company 13</td> 
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>1784</td>
+								<td>Fake Company 14</td> 
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>2748</td>
+								<td>Fake Company 15</td> 
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>4555</td>
+								<td>Fake Company 16</td> 
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>3477</td>
+								<td>Fake Company 17</td> 
+								<td>8</td>
+							</tr>
+							<tr>
+								<td>1566</td>
+								<td>Fake Company 18</td> 
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>2795</td>
+								<td>Fake Company 19</td> 
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>2844</td>
+								<td>Fake Company 20</td> 
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>3849</td>
+								<td>Fake Company 21</td> 
+								<td>9</td>
+							</tr>
+							<tr>
+								<td>3784</td>
+								<td>Fake Company 22</td> 
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>9756</td>
+								<td>Fake Company 23</td> 
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>7534</td>
+								<td>Fake Company 24</td> 
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>8455</td>
+								<td>Fake Company 25</td> 
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

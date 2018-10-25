@@ -1,0 +1,189 @@
+<html>
+	<head>
+		<title>
+			Files Page
+		</title>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="../css/base_generic.css">
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<!-- Jquery and datatables -->
+		<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="../css/dataTables.css">
+		<!-- Bootstrap core and jquery-ui JavaScript -->
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
+		<script src="../js/dataTables.min.js"></script>
+
+		<!-- Data Tables Script -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#filesTable').DataTable({
+					scrollY:        "400px",
+					scrollX:        true,
+					scrollCollapse: true,
+					paging:         false,
+					fixedColumns:   {
+						heightMatch: 'none'
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body style="background-color: #606b73;">
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #222325;">
+		  <a class="navbar-brand" href="#" style="color:#08C969">HPE File browser</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+			  <a class="nav-item nav-link" href="#">Systems <span class="sr-only">(current)</span></a>
+			  <a class="nav-item nav-link" href="#">Logout</a>
+			  <a class="nav-item nav-link" href="#">Help</a>
+			</div>
+		  </div>
+		</nav>
+
+		<!-- Central Card -->
+		<div id="card-container">
+			<div class="card mx-5 my-4" 
+				style="height: 40rem; text-align: center; box-shadow: 0px 10px 50px black; background-color: bbc1c4;">						
+				<div class="card-body">
+
+					<!-- Files Header -->
+					<div id="FileHeader">
+						<h5 style="float: left; text-shadow: 1px 3px 2px rgba(0,0,0,0.1); color:#34305e;">System ID:</h5>
+						<h1 class="mb-2" style="margin: 0 auto; width: 33.333%; text-shadow: 1px 3px 2px rgba(0,0,0,0.1); color:#34305e">Kyle's Files</h1>
+					</div>
+
+					<!-- Files Table -->
+					<table id="filesTable" class="table table-bordered my-5" style="width:100%; table-layout: fixed;">
+						<col width= "33.33333%">
+						<col width= "33.33333%">
+						<col width= "33.33333%">
+
+						<!-- Column Headers -->
+						<thead>
+							<tr class="table-secondary">
+								<th>File Name</th>
+								<th>Date</th> 
+								<th>Download Link</th>
+							</tr>
+						</thead>
+
+						<!-- Everything below this is a table entry -->
+						<tbody class="table-light">
+							<tr>
+								<td>Fake File 01</td>
+								<td>10/01/2018</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 02</td>
+								<td>01/01/2018</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 03</td>
+								<td>12/16/2015</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 04</td>
+								<td>4/29/2013</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 05</td>
+								<td>02/9/2017</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 06</td>
+								<td>10/03/2017</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 07</td>
+								<td>11/26/2016</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 08</td>
+								<td>08/08/2014</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 09</td>
+								<td>02/06/2017</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 10</td>
+								<td>05/07/2018</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 11</td>
+								<td>06/09/2016</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 12</td>
+								<td>10/10/2013</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 13</td>
+								<td>07/02/2016</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 14</td>
+								<td>04/01/2017</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 15</td>
+								<td>09/04/2018</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 16</td>
+								<td>09/27/2018</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 17</td>
+								<td>03/23/2018</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 18</td>
+								<td>06/17/2015</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 19</td>
+								<td>12/24/2016</td> 
+								<td>Download</td>
+							</tr>
+							<tr>
+								<td>Fake File 20</td>
+								<td>11/11/2011</td> 
+								<td>Download</td>
+							</tr>
+
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
