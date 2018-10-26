@@ -26,7 +26,7 @@ class User(models.Model):
 
 class File(models.Model):
     FileID = models.CharField(primary_key=True, max_length = 30)
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=30)
     filePath = models.CharField(max_length=100)
     dataDate = models.DateField()
     SystemID = models.ForeignKey(System, on_delete = models.CASCADE)
