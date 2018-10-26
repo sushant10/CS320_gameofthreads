@@ -18,3 +18,6 @@ class IndexView(generic.ListView):
 
 def systems(request):
     return HttpResponse("Welcome to the HPE File Browser Systems page ")
+
+def help(request):
+    return render(request, 'browser/help.html', {})
