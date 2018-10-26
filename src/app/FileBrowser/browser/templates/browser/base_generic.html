@@ -1,0 +1,24 @@
+{% load static %}
+
+<html>
+	<head>
+		<title>
+			File Browser
+		</title>
+		<link rel="stylesheet" href="{% static 'css/base_generic.css' %}">
+		<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	</head>
+	<body class="background">
+		{% include "browser/header.html" %}
+		&nbsp
+		&nbsp
+		<div id="card-container">
+			<div class="card mx-5 my-4 browser-card">
+				<div class="card-body">
+					{% block content %}
+					{% endblock %}
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
