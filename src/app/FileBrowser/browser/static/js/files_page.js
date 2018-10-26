@@ -9,3 +9,7 @@ $(document).ready(function(){
 		}
 	});
 });
+
+$(window).resize(function(){
+	$('#files-table').DataTable().draw();
+});
