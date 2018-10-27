@@ -32,10 +32,18 @@ class Command(BaseCommand):
 def importJson(app, tarFolder):
     import os
     import json
+    from sys import platform
+
+    if platform == "linux" or platform == "linux2" or platform == 'darwin':
+    # linux or OS X
+        f_slash = '/' 
+    elif platform == "win32":
+    # Windows...
+        f_slash = r'\\'
 
     cwd = os.getcwd()
     print("cwd = %s " % cwd)
-    folder = cwd + r"\\"
+    folder = cwd + f_slash
     for fold in os.listdir(cwd):
         if(fold == app):
             folder = folder + fold
@@ -44,12 +52,12 @@ def importJson(app, tarFolder):
         print(file)
         if(file == tarFolder):
             print("found data")
-            folder = folder + r"\\" + file
+            folder = folder + f_slash + file
 
     print ("folder then = %s " % folder)
     files = os.listdir(folder)
     for file in files:
-        path = os.path.abspath(folder+ r"\\" + file)
+        path = os.path.abspath(folder+ f_slash + file)
         #print(path)
         f = open(path)
         fText = f.read()
@@ -67,7 +75,7 @@ def importJson(app, tarFolder):
                 print(ex)
                 System.objects.create(serialNumberInserv = systemID)
                 sys = System.objects.get(pk = systemID)
-            fpath = "files" + r"/" + file
+            fpath = "files" + f_slash + file
             File.objects.update_or_create(FileID = ID,
              defaults = { 'filePath' : fpath,'dataDate' : datadate, 'name' : file, 'SystemID' : sys} )
 
