@@ -16,31 +16,33 @@
 	</div>
 
 	<!-- Files Table -->
-	<table id="files-table" class="table table-bordered my-5 browser-table">
-		<col width= "33.33333%">
-		<col width= "33.33333%">
-		<col width= "33.33333%">
+	<div class="table-responsive" style="overflow-x: auto;">
+		<table id="files-table" class="table  table-bordered my-5 browser-table">
+			<col width= "33.33333%">
+			<col width= "33.33333%">
+			<col width= "33.33333%">
 
-		<!-- Column Headers -->
-		<thead>
-			<tr class="table-secondary">
-				<th>File Name</th>
-				<th>Date</th> 
-				<th>Download Link</th>
-			</tr>
-		</thead>
+			<!-- Column Headers -->
+			<thead>
+				<tr class="table-secondary">
+					<th>File Name</th>
+					<th>Date</th> 
+					<th>Download Link</th>
+				</tr>
+			</thead>
 
-		<!-- Table -->
-		<tbody class="table-light">
-			{% if file_list %}			
-				{% for file in file_list %}
-					<tr>
-						<td>{{file.FileID}}</td>
-						<td>{{file.dataDate}}
-						<td> <a href="{%static file.filePath %}" download> Download </a> </td>
-					</tr>
-				{% endfor %}
-			{% endif %}
-		</tbody>
-	</table>
+			<!-- Table -->
+			<tbody class="table-light">
+				{% if file_list %}			
+					{% for file in file_list %}
+						<tr>
+							<td>{{file.FileID}}</td>
+							<td>{{file.dataDate}}</td>
+							<td> <a href="{%static file.filePath %}" download> Download </a> </td>
+						</tr>
+					{% endfor %}
+				{% endif %}
+			</tbody>
+		</table>
+	</div>
 {% endblock %}
