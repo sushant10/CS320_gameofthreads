@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_list_or_404
 from django.http import HttpResponse
 from django.views import generic
-from .models import File
+from django.template import loader
+from .models import File, System
 
 
 # Create your views here.
@@ -16,8 +17,19 @@ class IndexView(generic.ListView):
     def get_queryset(self):
         return File.objects.all().order_by('-SystemID')[:100]
 
-def systems(request):
-    return HttpResponse("Welcome to the HPE File Browser Systems page ")
+class SystemView(generic.ListView):
+    template_name = 'browser/systems.html'
+    context_object_name = 'system_list'
+
+    def get_queryset(self):
+        return System.objects.all().order_by('-serialNumberInserv')[:100]
+
+
+
+def files(request, serialNumberInserv):
+    files = get_list_or_404(File, SystemID = serialNumberInserv)
+    return render(request, 'browser/files_page.html', {'file_list':files})
+
 
 def help(request):
     return render(request, 'browser/help.html', {})
