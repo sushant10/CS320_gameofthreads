@@ -6,5 +6,5 @@ urlpatterns = [
     path('', views.IndexView.as_view(), name = 'index'),
     path('help/', views.help, name = 'help'),
     path('systems/<int:serialNumberInserv>', views.files, name = 'files'),
-    path('systems/', views.SystemView.as_view(), name = 'systems' )
+    path('systems/', views.systems, name = 'systems' )
 ]

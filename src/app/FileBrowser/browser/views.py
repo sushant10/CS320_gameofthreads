@@ -24,7 +24,13 @@ class SystemView(generic.ListView):
     def get_queryset(self):
         return System.objects.all().order_by('-serialNumberInserv')[:100]
 
-
+def systems(request):
+    system_list = System.objects.all().order_by('serialNumberInserv')[:100]
+    counts = []
+    for system in system_list:
+        counts.append(File.objects.filter(SystemID = system.serialNumberInserv).count())
+    system_count_list = zip(system_list, counts)
+    return render(request, 'browser/systems.html', {'system_list' : system_count_list})
 
 def files(request, serialNumberInserv):
     files = get_list_or_404(File, SystemID = serialNumberInserv)
