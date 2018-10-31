@@ -40,8 +40,5 @@ File structure to follow (Subject to change)
 **js**: will contain bootstrap, JQuery and other files   
 **templates**: will contain all the django template files for each page  
 
-  
-Database Credentials:  
-      Database Name: file_browser_db  
-      User Name: db_admin  
-      Password: cs320
+  Setup Instructions:
+  https://docs.google.com/document/d/1NCx2q0U3q0VcgsMp5Eqq_OFFOb0YKr6My26RTzn6EI4/edit?usp=sharing
