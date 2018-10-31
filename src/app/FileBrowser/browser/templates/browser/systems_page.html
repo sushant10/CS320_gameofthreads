@@ -1,0 +1,46 @@
+{% extends "browser/base_generic.html" %}
+{% load static %}
+
+{% block content %}	
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'css/table_page.css' %}">	
+	<link rel="stylesheet" href="{% static 'css/datatables.css' %}">
+	<script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/datatables.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/files_page.js' %}"></script>
+	
+	<!-- Systems Header -->
+	<div id="SystemHeader">
+		<h1 class="mb-2 file-header">Systems</h1>
+		<!--<h5 class="system-id">System ID: 38510</h5>-->
+	</div>
+
+	<!-- Systems Table -->
+	<table id="files-table" class="table table-bordered my-5 browser-table">
+		<col width= "33.33333%">
+		<col width= "33.33333%">
+		<col width= "33.33333%">
+
+		<!-- Column Headers -->
+		<thead>
+			<tr class="table-secondary">
+				<th>System ID</th>
+				<th>Company Name</th> 
+				<th>Number of Files</th>
+			</tr>
+		</thead>
+
+		<!-- Table -->
+		<tbody class="table-light">
+			{% if system_list %}			
+				{% for system, count in system_list %}
+					<tr>
+						<td> <a href="{% url 'browser:files' system.serialNumberInserv %}"> {{system.serialNumberInserv}} </a> </td>
+						<td>{{system.name}}</td>
+						<td>{{count}}</td>
+					</tr>
+				{% endfor %}
+			{% endif %}
+		</tbody>
+	</table>
+{% endblock %}
