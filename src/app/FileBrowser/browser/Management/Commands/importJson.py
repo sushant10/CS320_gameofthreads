@@ -36,7 +36,7 @@ def importJson(app, tarFolder):
 
     if platform == "linux" or platform == "linux2" or platform == 'darwin':
     # linux or OS X
-        f_slash = '/' 
+        f_slash = '/'
     elif platform == "win32":
     # Windows...
         f_slash = r'\\'
@@ -68,7 +68,9 @@ def importJson(app, tarFolder):
             datestring = "-".join(file.split('-')[1:]).split('.')[0]
             datadate = parse_date(datestring)
             systemID = file.split('-')[0]
+            companyName = j['system']['companyName']
             try:
+                System.objects.update_or_create(serialNumberInserv = systemID, defaults = {'name': companyName})
                 sys = System.objects.get(pk = systemID)
                 #print("created file with %s ID, %s path" % (ID, path))
             except Exception as ex:
