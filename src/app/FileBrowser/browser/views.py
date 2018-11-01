@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_list_or_404
+from django.shortcuts import render, get_list_or_404, get_object_or_404
 from django.http import HttpResponse
 from django.views import generic
 from django.template import loader
@@ -34,8 +34,9 @@ def systems(request):
 
 def files(request, serialNumberInserv):
     files = get_list_or_404(File, SystemID = serialNumberInserv)
+    system = get_object_or_404(System, serialNumberInserv=serialNumberInserv)
     return render(request, 'browser/files_page.html', {'file_list':files, 'companyID':serialNumberInserv, 
-        'companyName':System.objects.filter(serialNumberInserv=serialNumberInserv).first().name})
+        'companyName':system.name})
 
 
 def help(request):
