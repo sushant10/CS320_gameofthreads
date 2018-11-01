@@ -34,7 +34,8 @@ def systems(request):
 
 def files(request, serialNumberInserv):
     files = get_list_or_404(File, SystemID = serialNumberInserv)
-    return render(request, 'browser/files_page.html', {'file_list':files})
+    return render(request, 'browser/files_page.html', {'file_list':files, 'companyID':serialNumberInserv, 
+        'companyName':System.objects.filter(serialNumberInserv=serialNumberInserv).first().name})
 
 
 def help(request):
