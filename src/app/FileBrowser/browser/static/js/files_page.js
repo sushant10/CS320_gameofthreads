@@ -6,7 +6,12 @@ $(document).ready(function(){
 		paging:         false,
 		fixedColumns:   {
 			heightMatch: 'none'
-		}
+		},
+		columns: [
+			{"type": "html"},
+			{"type": "date"},
+			{"type": "html", "searchable": false}
+		]
 	});
 });
 

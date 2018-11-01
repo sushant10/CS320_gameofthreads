@@ -36,8 +36,8 @@
 				{% for file in file_list %}
 					<tr>
 						<td>{{file.FileID}}</td>
-						<td>{{file.dataDate}}
-						<td> <a href="{%static file.filePath %}" download> Download </a> </td>
+						<td>{{file.dataDate|date:"Y-m-d"}}
+						<td> <a href="{% static file.filePath %}" download> Download </a> </td>
 					</tr>
 				{% endfor %}
 			{% endif %}
