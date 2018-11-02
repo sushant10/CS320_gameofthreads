@@ -41,3 +41,6 @@ def files(request, serialNumberInserv):
 
 def help(request):
     return render(request, 'browser/help.html', {})
+
+def login(request):
+    return render(request, 'browser/login.html', {})

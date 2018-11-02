@@ -1,0 +1,40 @@
+{% extends 'browser/base_generic.html' %}
+
+{% block content %}
+<style>
+    .browser-card {
+        /*height: 40rem;*/
+        text-align: center;
+        box-shadow: 0px 10px 50px black;
+        background-color: bbc1c4 !important;
+        margin-right: 25rem !important;
+        margin-left: 25rem !important;
+        margin-top: 6rem !important;
+    }
+    .login-form {
+        margin: auto;
+        text-align: left;
+        width: 50%;
+    }
+    .login-form input {
+        margin-top: 8px;
+    }
+    .btn {
+        margin: auto;
+        margin-top: 20px;
+    }
+    .navbar {
+        display: none;
+    }
+</style>
+
+<h1>File Browser<span class="badge badge-secondary"></span></h1>
+<p>
+    <div class="login-form">
+        <h4>Log-in</h4>
+        <input type="text" placeholder="Username" class="form-control" id="usr">
+        <input type="password" placeholder="Password" class="form-control" id="psw">
+    </div>
+    <a class ="btn btn-primary" data-toggle="collapse" href="" role="button" aria-expanded="false">Sign In</a>
+</p>
+{% endblock %}
