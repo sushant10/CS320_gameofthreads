@@ -87,3 +87,7 @@ def createFile(ID, filepath, datadate, Name, systemid):
 
 def createSystem(Serial, Name):
     System.objects.create(serialNumberInserv = Serial, name = Name)
+
+# Create Company
+def createCompany(....):
+    
