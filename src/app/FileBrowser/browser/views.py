@@ -3,7 +3,9 @@ from django.http import HttpResponse
 from django.views import generic
 from django.template import loader
 from .models import File, System
-
+from django.contrib.auth import logout
+from django.shortcuts import redirect
+from django.urls import reverse
 
 # Create your views here.
 """
@@ -42,5 +44,9 @@ def files(request, serialNumberInserv):
 def help(request):
     return render(request, 'browser/help.html', {})
 
-def login(request):
+def loginView(request):
     return render(request, 'browser/login.html', {})
+
+def logoutView(request):
+    logout(request)
+    return redirect("browser:login")
