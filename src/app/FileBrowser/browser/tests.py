@@ -132,3 +132,38 @@ class ModelsTests(TestCase):
 
 
 
+class ViewsTests(TestCase):
+
+	def setUp(self):
+		"""
+		Create objects that are put into a separate testing database
+		"""
+		self.system1212 = System.objects.create(serialNumberInserv= "1212",
+												name= "Mr. Wu")
+
+		self.file1212_2018_09_09 = File.objects.create(FileID= "121220180909", 
+														name= "1212-2018-09-09.json", 
+														filePath= "files/1212-2018-09-09.json", 
+														dataDate= parse_date("2018-09-09"), 
+														SystemID= self.system1212)
+
+	def test_simple_system_view(self):
+		"""
+		This test just verifies that we can access the system url
+
+		NOTE: This could be subject to change as the URL to get to the systems page is currently just /browser
+		"""
+		response = self.client.get('/browser', follow=True)
+		self.assertEqual(response.status_code, 200)
+
+
+	def test_simple_file_view(self):
+		"""
+		This test just verifies that we can access the files url for a specific system
+
+		NOTE: This could be subject to change as the URL to get to the systems page 
+			  is currently just /browser/systems/'insert SystemID here'
+		"""
+
+		response = self.client.get('/browser/systems/1212', follow=True)
+		self.assertEqual(response.status_code, 200)
