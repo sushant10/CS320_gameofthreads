@@ -11,8 +11,9 @@
 	
 	<!-- Files Header -->
 	<div id="FileHeader">
-		<h1 class="mb-2 file-header">Company's Files</h1>
-		<h5 class="system-id">System ID: 38510</h5>
+		<h1 class="mb-2 file-header">{% if companyName %}{{companyName}}'s Files
+									{% else %}All Files{% endif %}</h1>
+		<h5 class="system-id">{% if companyID %}System ID: {{companyID}}{% endif %}</h5>
 	</div>
 
 	<!-- Files Table -->
@@ -45,4 +46,5 @@
 			</tbody>
 		</table>
 	</div>
+
 {% endblock %}

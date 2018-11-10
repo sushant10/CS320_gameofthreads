@@ -7,8 +7,8 @@ from django.db import models
 
 
 class System(models.Model):
-    serialNumberInserv = models.CharField(primary_key=True, max_length = 20)
-    name = models.CharField(max_length=20)
+    serialNumberInserv = models.CharField(primary_key=True, max_length = 45)
+    name = models.CharField(max_length=45)
     def __str__(self):
         return self.serialNumberInserv
 """
@@ -25,8 +25,8 @@ class User(models.Model):
 """
 
 class File(models.Model):
-    FileID = models.CharField(primary_key=True, max_length = 30)
-    name = models.CharField(max_length=30)
+    FileID = models.CharField(primary_key=True, max_length = 45)
+    name = models.CharField(max_length=35)
     filePath = models.CharField(max_length=100)
     dataDate = models.DateField()
     SystemID = models.ForeignKey(System, on_delete = models.CASCADE)

@@ -17,6 +17,8 @@
     <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/dataTables.min.js"></script>
 	-->
+    <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 
 </head>
 <body>
@@ -27,8 +29,8 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Systems <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Logout</a>
+      <a class="nav-item nav-link" href="{% url 'browser:systems' %}">Systems <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="{% url 'browser:logout' %}">Logout</a>
       <a class="nav-item nav-link" href="{% url 'browser:help' %}">Help</a>
     </div>
   </div>
