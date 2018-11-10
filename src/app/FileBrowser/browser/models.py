@@ -11,18 +11,11 @@ class System(models.Model):
     name = models.CharField(max_length=45)
     def __str__(self):
         return self.serialNumberInserv
-"""
-class Tenant(models.Model):
-    TenantID = models.IntegerField(primary_key=True)
-    Name = models.CharField(max_length=20)
-    systemIDs = ArrayField(models.ForeignKey(System, on_delete = models.CASCADE), size = 128,)
 
-class User(models.Model):
-    UserID = models.IntegerField(primary_key=True)
-    UserName = models.CharField(max_length=20)
-    PasswordKey= models.CharField(max_length=32)
-    TenantID = models.ForeignKey(Tenant, on_delete = models.CASCADE)
-"""
+class customUser(models.Model):
+    username = models.CharField(max_length=20)
+    password = models.CharField(max_length=100)
+    role = models.CharField(max_length=20)
 
 class File(models.Model):
     FileID = models.CharField(primary_key=True, max_length = 45)
