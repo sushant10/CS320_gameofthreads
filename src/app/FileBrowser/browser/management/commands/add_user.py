@@ -5,8 +5,11 @@ from django.contrib.auth.hashers import make_password, check_password
 
 
 '''
+    Usage: python3 manage.py add_user [username] [password] [role]
+
+    More Info:
     Create hashed password using django hashing, 
-    to check the password use check_password(password, encoded)
+    to check the password use the django function check_password(password, encoded)
 '''
 
 class Command(BaseCommand):
