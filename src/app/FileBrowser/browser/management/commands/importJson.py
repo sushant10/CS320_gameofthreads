@@ -69,8 +69,9 @@ def importJson(app, tarFolder):
             datadate = parse_date(datestring)
             systemID = file.split('-')[0]
             companyName = j['system']['companyName']
+            tenants = j['authorized']['tenants']
             try:
-                System.objects.update_or_create(serialNumberInserv = systemID, defaults = {'name': companyName})
+                System.objects.update_or_create(serialNumberInserv = systemID, defaults = {'name': companyName, 'tenants': tenants})
                 sys = System.objects.get(pk = systemID)
                 #print("created file with %s ID, %s path" % (ID, path))
             except Exception as ex:
