@@ -42,19 +42,19 @@ def importJson(app, tarFolder):
         f_slash = r'\\'
 
     cwd = os.getcwd()
-    print("cwd = %s " % cwd)
+    #print("cwd = %s " % cwd)
     folder = cwd + f_slash
     for fold in os.listdir(cwd):
         if(fold == app):
             folder = folder + fold
-    print("folder = %s" % folder)
+    #print("folder = %s" % folder)
     for file in os.listdir(folder):
-        print(file)
+        #print(file)
         if(file == tarFolder):
             print("found data")
             folder = folder + f_slash + file
 
-    print ("folder then = %s " % folder)
+    #print ("folder then = %s " % folder)
     files = os.listdir(folder)
     for file in files:
         path = os.path.abspath(folder+ f_slash + file)
@@ -75,7 +75,7 @@ def importJson(app, tarFolder):
                 sys = System.objects.get(pk = systemID)
                 #print("created file with %s ID, %s path" % (ID, path))
             except Exception as ex:
-                print(ex)
+                #print(ex)
                 System.objects.create(serialNumberInserv = systemID)
                 sys = System.objects.get(pk = systemID)
             fpath = "files" + f_slash + file

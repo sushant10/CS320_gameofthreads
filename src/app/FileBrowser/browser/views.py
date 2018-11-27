@@ -32,8 +32,8 @@ class SystemView(generic.ListView):
 def systems(request):
     if not request.session.has_key('username'):
         return redirect("browser:login")
-    username = request.session['username']
-    system_list = System.objects.all().order_by('serialNumberInserv')[:100]
+    username = str(request.session['username'])
+    system_list = System.objects.filter(tenants__contains = [username]).order_by('serialNumberInserv')[:100]
     counts = []
     for system in system_list:
         counts.append(File.objects.filter(SystemID = system.serialNumberInserv).count())
@@ -57,6 +57,10 @@ def help(request):
 
 def loginView(request):
     errors = []
+    try:
+      del request.session['username']
+    except:
+      pass
     if request.method == 'POST':
         login_form = LoginForm(data=request.POST)
         if login_form.is_valid():
