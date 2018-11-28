@@ -72,9 +72,9 @@ def loginView(request):
                     request.session['username'] = usr
                     return redirect("browser:systems")
                 else:
-                    errors = ['invalid password']
+                    errors = ['invalid username or password']
             except ObjectDoesNotExist:
-                errors = ['invalid username']
+                errors = ['invalid username or password']
         else:
             errors = ['invalid username or password']
 
