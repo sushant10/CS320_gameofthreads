@@ -9,6 +9,9 @@ from django.urls import reverse
 from django.contrib.auth.hashers import make_password, check_password
 from django.core.exceptions import ObjectDoesNotExist
 from .forms import *
+import json
+from django.utils.encoding import smart_str
+import os
 
 # Create your views here.
 """
@@ -49,6 +52,22 @@ def files(request, serialNumberInserv):
     return render(request, 'browser/files_page.html', {'file_list':files, 'companyID':serialNumberInserv, 
         'companyName':system.name})
 
+def download(request, fileID):
+    if not request.session.has_key('username'):
+        return redirect("browser:login")
+    file = get_object_or_404(File, FileID=fileID)
+    systemID = file.SystemID
+    system = get_object_or_404(System, serialNumberInserv=systemID)
+    tenants = system.tenants
+    username = str(request.session['username'])
+    if username in tenants:
+        with open('browser/static/'+file.filePath) as f:
+            data = json.load(f)
+        response = HttpResponse(json.dumps(data, indent=4), content_type='application/force-download')
+        response['Content-Disposition'] = 'attachment; filename=%s' % smart_str(file.name)
+        return response
+    else:
+        return redirect("browser:login")
 
 def help(request):
     if not request.session.has_key('username'):
