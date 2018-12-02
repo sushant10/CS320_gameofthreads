@@ -19,15 +19,17 @@
 	<!-- Files Table -->
 	<div class="table-responsive" style="overflow-x: auto;">
 		<table id="files-table" class="table  table-bordered my-5 browser-table">
-			<col width= "33.33333%">
-			<col width= "33.33333%">
-			<col width= "33.33333%">
+			<col width= "25%">
+			<col width= "25%">
+			<col width= "25%">
+			<col width= "25%">
 
 			<!-- Column Headers -->
 			<thead>
 				<tr class="table-secondary">
 					<th>File Name</th>
-					<th>Date</th> 
+					<th>Date</th>
+					<th>Free Capacity</th>
 					<th>Download Link</th>
 				</tr>
 			</thead>
@@ -39,6 +41,7 @@
 						<tr>
 							<td>{{file.FileID}}</td>
 							<td>{{file.dataDate}}</td>
+							<td>{{file.capacity}}</td>
 							<td> <a href="{%static file.filePath %}" download> Download </a> </td>
 						</tr>
 					{% endfor %}
