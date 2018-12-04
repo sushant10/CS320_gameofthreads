@@ -54,9 +54,6 @@ def importJson(app, tarFolder):
             print("found data")
             folder = folder + f_slash + file
 
-    #since we go through every file every time we run this, reset this field so that we count the correct value
-    System.objects.update(fileCount=0)
-
     #print ("folder then = %s " % folder)
     files = os.listdir(folder)
     for file in files:
@@ -75,16 +72,13 @@ def importJson(app, tarFolder):
             tenants = j['authorized']['tenants']
             freePct = round(j['capacity']['total']['freePct'], 3)
             try:
-                System.objects.update_or_create(serialNumberInserv = systemID, defaults = {'name': companyName, 'tenants': tenants})
+                System.objects.update_or_create(serialNumberInserv = systemID, defaults = {'name': companyName, 'tenants': tenants, 'recentDate' : datadate, 'capacity' : freePct})
                 sys = System.objects.get(pk = systemID)
                 #print("created file with %s ID, %s path" % (ID, path))
             except Exception as ex:
                 #print(ex)
-                System.objects.create(serialNumberInserv = systemID)
+                System.objects.create(serialNumberInserv = systemID, recentDate = datadate, capacity = freePct)
                 sys = System.objects.get(pk = systemID)
-            sys.fileCount = sys.fileCount + 1
-            sys.save()
-            #print(sys.fileCount)
             fpath = "files" + f_slash + file
             File.objects.update_or_create(FileID = ID,
             defaults = { 'filePath' : fpath,'dataDate' : datadate, 'name' : file, 'SystemID' : sys, 'capacity' : freePct} )
@@ -95,5 +89,5 @@ def importJson(app, tarFolder):
 def createFile(ID, filepath, datadate, Name, systemid, freePct):
     File.objects.create(FileID = ID, filePath = filepath, dataDate = datadate, name = Name,SystemID = systemid, capacity = freePct)
 
-def createSystem(Serial, Name):
-    System.objects.create(serialNumberInserv = Serial, name = Name)
+def createSystem(Serial, Name, datadate, freePct):
+    System.objects.create(serialNumberInserv = Serial, name = Name, recentDate = datadate, capacity = freePct)
