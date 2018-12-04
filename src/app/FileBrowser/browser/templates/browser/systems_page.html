@@ -35,17 +35,13 @@
 		<!-- Table -->
 		<tbody class="table-light">
 			{% if system_list %}			
-				{% for system, count in system_list %}
+				{% for system in system_list %}
 					<tr> 
 						<td> <a href="{% url 'browser:files' system.serialNumberInserv %}"> {{system.serialNumberInserv}} </a> </td>
 						<td>{{system.name}}</td>
 						<td>{{system.recentDate}}</td>
 
-						{% if system.capacity <= 30 %}
-							<td style="background-color:rgba(255, 0, 0, 0.2)">{{system.capacity}}</td>
-						{% else %}
-							<td style="background-color:rgba(255, 255, 255, 1)">{{system.capacity}}</td>
-						{% endif %}
+						<td class="capacity">{{system.capacity}}%</td>						
 					</tr>
 				{% endfor %}
 			{% endif %}
