@@ -72,13 +72,21 @@ def importJson(app, tarFolder):
             tenants = j['authorized']['tenants']
             freePct = round(j['capacity']['total']['freePct'], 3)
             try:
-                System.objects.update_or_create(serialNumberInserv = systemID, defaults = {'name': companyName, 'tenants': tenants, 'recentDate' : datadate, 'capacity' : freePct})
+                sys = System.objects.get(pk = systemID)
+                if(sys):
+                   if(sys.recentDate < datadate):
+                       System.objects.update_or_create(serialNumberInserv = systemID, defaults = {'name': companyName, 'tenants': tenants, 'recentDate' : datadate, 'capacity' : freePct})      
+                else:
+                   System.objects.update_or_create(serialNumberInserv = systemID, defaults = {'name': companyName, 'tenants': tenants, 'recentDate' : datadate, 'capacity' : freePct})
+                   
+					
                 sys = System.objects.get(pk = systemID)
                 #print("created file with %s ID, %s path" % (ID, path))
             except Exception as ex:
-                #print(ex)
+                print(ex)
                 System.objects.create(serialNumberInserv = systemID, recentDate = datadate, capacity = freePct)
                 sys = System.objects.get(pk = systemID)
+
             fpath = "files" + f_slash + file
             File.objects.update_or_create(FileID = ID,
             defaults = { 'filePath' : fpath,'dataDate' : datadate, 'name' : file, 'SystemID' : sys, 'capacity' : freePct} )
