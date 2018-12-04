@@ -9,40 +9,24 @@ from django.urls import reverse
 from django.contrib.auth.hashers import make_password, check_password
 from django.core.exceptions import ObjectDoesNotExist
 from .forms import *
-import json
-from django.utils.encoding import smart_str
-import os
-from sys import platform
-
+from django_datatables_view.base_datatable_view import BaseDatatableView
 # Create your views here.
 """
 def index(request):
     return HttpResponse("Welcome to HPE File Browser 0.0.1")
 """
-class IndexView(generic.ListView):
-    template_name = 'browser/files_page.html'
-    context_object_name = 'file_list'
 
-    def get_queryset(self):
-        return File.objects.all().order_by('-SystemID')[:100]
-
-class SystemView(generic.ListView):
-    template_name = 'browser/systems_page.html'
-    context_object_name = 'system_list'
-
-    def get_queryset(self):
-        return System.objects.all().order_by('-serialNumberInserv')[:100]
+class dtSystems(BaseDatatableView):
+	model = System
+	columns = ["serialNumberInserv", "name", "tenants"]
+	order_columns = ["serialNumberInserv", "name", "tenants"]
 
 def systems(request):
+    return render(request, 'browser/systems_page.html')
     if not request.session.has_key('username'):
         return redirect("browser:login")
-    username = str(request.session['username'])
-    system_list = System.objects.filter(tenants__contains = [username]).order_by('serialNumberInserv')[:100]
-    counts = []
-    for system in system_list:
-        counts.append(File.objects.filter(SystemID = system.serialNumberInserv).count())
-    system_count_list = zip(system_list, counts)
-    return render(request, 'browser/systems_page.html', {'system_list' : system_count_list})
+    username = request.session['username']
+    return render(request)
 
 
 def files(request, serialNumberInserv):
@@ -53,28 +37,6 @@ def files(request, serialNumberInserv):
     return render(request, 'browser/files_page.html', {'file_list':files, 'companyID':serialNumberInserv, 
         'companyName':system.name})
 
-def download(request, fileID):
-    if not request.session.has_key('username'):
-        return redirect("browser:login")
-    file = get_object_or_404(File, FileID=fileID)
-    if platform == "linux" or platform == "linux2" or platform == 'darwin':
-    # linux or OS X
-        f_path = 'browser/static/'
-    elif platform == "win32":
-    # Windows...
-        f_path = r'browser\\'
-    systemID = file.SystemID
-    system = get_object_or_404(System, serialNumberInserv=systemID)
-    tenants = system.tenants
-    username = str(request.session['username'])
-    if username in tenants:
-        with open(f_path+file.filePath) as f:
-            data = json.load(f)
-        response = HttpResponse(json.dumps(data, indent=4), content_type='application/force-download')
-        response['Content-Disposition'] = 'attachment; filename=%s' % smart_str(file.name)
-        return response
-    else:
-        return redirect("browser:login")
 
 def help(request):
     if not request.session.has_key('username'):
@@ -83,10 +45,6 @@ def help(request):
 
 def loginView(request):
     errors = []
-    try:
-      del request.session['username']
-    except:
-      pass
     if request.method == 'POST':
         login_form = LoginForm(data=request.POST)
         if login_form.is_valid():
@@ -98,9 +56,9 @@ def loginView(request):
                     request.session['username'] = usr
                     return redirect("browser:systems")
                 else:
-                    errors = ['invalid username or password']
+                    errors = ['invalid password']
             except ObjectDoesNotExist:
-                errors = ['invalid username or password']
+                errors = ['invalid username']
         else:
             errors = ['invalid username or password']
 
