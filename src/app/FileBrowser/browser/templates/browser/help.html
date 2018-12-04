@@ -8,134 +8,129 @@
 <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/help.js' %}"></script>
 
 <h1>FileSublime<span class="badge badge-secondary"></span></h1>
 
-<ul class="nav nav-tabs">
-	<li class="nav-item active"><a class="nav-link" href="#welcome">Welcome</a></li>
-	<li class="nav-item"><a class="nav-link" href="#tutorial">Tutorial</a></li>
-	<li class="nav-item"><a class="nav-link" href="#changelog">Changelog</a></li>
-</ul>
+<div id="help-container" class="center-section">
+	<ul class="nav nav-tabs">
+		<li class="nav-item active"><a class="nav-link" href="#welcome">Welcome</a></li>
+		<li class="nav-item"><a class="nav-link" href="#tutorial">Tutorial</a></li>
+		<li class="nav-item"><a class="nav-link" href="#changelog">Changelog</a></li>
+	</ul>
 
-<div class="tab-content">
-	<div id="welcome" class="tab-pane fade in active help-section">
-		<h4>Welcome</h4>
-		<p>
-			For HPE support users who need to download specific HPE system files, FileSublime
-			is a file browser that provides access to raw support files, previously only
-			indirectly available through other support tools. Our product is a simple and
-			direct way to retrieve raw data.
-		</p>
-		<p>
-			FileSublime is used to filter through specific Json files which contain certain
-			identifying information, such as system and date.
-		</p>
-		<p>
-			<a href="https://github.com/sushant10/CS320_gameofthreads/wiki">View Project Wiki</a>
-		</p>
-	</div>
-	<div id="tutorial" class="tab-pane fade help-section">
-		<h4>Navigation Bar</h4>
-		<p>
-			At the top of every page there is the navigation bar. You can use this to help
-			navigate the web app or view the help section. There is a “Systems” button that
-			brings you to the systems page, a “Logout” button that logs the current user out
-			and a “Help” button that brings up the help page.
-		</p>
-		<h4>Systems Page</h4>
-		<p>
-			By default, you are brought to the systems page. This lists all the systems in a
-			table along with some identifying information. It shows a system’s system ID,
-			associated company name and the number of files associated with that system. You 
-			can use the search bar in the upper right to filter systems and find the one you 
-			are looking for. To view the files for a system, click on the respective system’s
-			system ID. This will bring you to the system’s file page.
-		</p>
-		<h4>Files Page</h4>
-		<p>
-			On the file page you can view all the files associated with a system along with
-			some identifying information. At the top of the page, you can see the system you
-			are browsing’s company name and the system ID. Below that is a table listing all
-			of the files for that system. Each file has a file name and date. You can search
-			for files within a system by using the search bar on the top right hand corner of
-			the table. Once you find the file you want to download, you can click “Download” 
-			on that file’s table row.
-		</p>
-	</div>
-	<div id="changelog" class="tab-pane fade help-section">
-		<h4>Version 0.5 (11-8-2018)</h4>
-		<h5>Added</h5>
-			<ul>
-				<li>Functionality to the navigation bar, the buttons can now be pressed and 
-					actually do something</li>
-				<li>Basic login.html file to reflect the design of the original login page</li>
-				<li>More white box testing for both the models.py and views.py</li>
-			</ul>
-		<h5>Changed</h5>
-			<ul>
-				<li>The JS and HTML files for the files page to display the dates in the appropriate format</li>
-				<li>The files page was changed to display the system and company info</li>
-			</ul>
-		<hr>
-		<h4>Version 0.4 (10-31-2018)</h4>
-		<h5>Added</h5>
-			<ul>
-				<li>First white box tests were added into the tests.py file for Django's testing suite</li>
-			</ul>
-		<h5>Changed</h5>
-			<ul>
-				<li>importJson.py will now work with all OS types</li>
-				<li>files_page.html bug was fixed so search bar does not overflow over the card</li>
-				<li>urls.py to reflect the appropriate url names</li>
-				<li>views.py to use the generic list view provided by Django</li>
-				<li>Updated the systems_page.html file to no longer contain all the CSS code</li>
-			</ul>
-		<hr>
-		<h4>Version 0.3 (10-26-2018)</h4>
-		<h5>Added</h5>
-			<ul>
-				<li>System and file page HTML mockups to better represent the original design of the website</li>
-				<li>Help page to tell the user how to use the website</li>
-				<li>Dynamic page template based off of the HTML mockups previously mentioned</li>
-			</ul>
-		<h5>Changed</h5>
-			<ul>
-				<li>views.py and urls.py to reflect the addition of the help page</li>
-			</ul>
-		<hr>
-		<h4>Version 0.2 (10-18-2018)</h4>
-		<h5>Added</h5>
-			<ul>
-				<li>importJson.py script to allow for us to easily import json files into the database</li>
-				<li>tests.py to allow for automated testing using Django's testing suite</li>
-			</ul>
-		<h5>Changed</h5>
-			<ul>
-				<li>Django models.py file to reflect our design for the database</li>
-				<li>Django manage.py file to handle the exception of importJson not working</li>
-				<li>Django urls.py to contain the correct urls for our website</li>
-				<li>Django settings.py to add the PostgreSQL database</li>
-				<li>Django views.py to contain the appropriate view for both file and systems pages</li>
-			</ul>
-		<hr>
-		<h4>Version 0.1 (10-12-2018)</h4>
-		<h5>Added</h5>
-			<ul>
-				<li>Basic base HTML file to outline the design of our website</li>
-				<li>Basic Django file structure</li>
-				<li>Support files for DataTables, JQuery and Bootstrap</li>
-				<li>Navigation bar HTML file</li>
-			</ul>			
+	<div class="tab-content">
+		<div id="welcome" class="tab-pane fade in active help-section">
+			<h4>Welcome</h4>
+			<p>
+				For HPE support users who need to download specific HPE system files, FileSublime
+				is a file browser that provides access to raw support files, previously only
+				indirectly available through other support tools. Our product is a simple and
+				direct way to retrieve raw data.
+			</p>
+			<p>
+				FileSublime is used to filter through specific Json files which contain certain
+				identifying information, such as system and date.
+			</p>
+			<p>
+				<a href="https://github.com/sushant10/CS320_gameofthreads/wiki">View Project Wiki</a>
+			</p>
+		</div>
+		<div id="tutorial" class="tab-pane fade help-section">
+			<h4>Navigation Bar</h4>
+			<p>
+				At the top of every page there is the navigation bar. You can use this to help
+				navigate the web app or view the help section. There is a “Systems” button that
+				brings you to the systems page, a “Logout” button that logs the current user out
+				and a “Help” button that brings up the help page.
+			</p>
+			<h4>Systems Page</h4>
+			<p>
+				By default, you are brought to the systems page. This lists all the systems in a
+				table along with some identifying information. It shows a system’s system ID,
+				associated company name and the number of files associated with that system. You 
+				can use the search bar in the upper right to filter systems and find the one you 
+				are looking for. To view the files for a system, click on the respective system’s
+				system ID. This will bring you to the system’s file page.
+			</p>
+			<h4>Files Page</h4>
+			<p>
+				On the file page you can view all the files associated with a system along with
+				some identifying information. At the top of the page, you can see the system you
+				are browsing’s company name and the system ID. Below that is a table listing all
+				of the files for that system. Each file has a file name and date. You can search
+				for files within a system by using the search bar on the top right hand corner of
+				the table. Once you find the file you want to download, you can click “Download” 
+				on that file’s table row.
+			</p>
+		</div>
+		<div id="changelog" class="tab-pane fade help-section">
+			<h4 class="version">Version 0.5 (11-8-2018)</h4>
+			<h5>Added</h5>
+				<ul>
+					<li>Functionality to the navigation bar, the buttons can now be pressed and 
+						actually do something</li>
+					<li>Basic login.html file to reflect the design of the original login page</li>
+					<li>More white box testing for both the models.py and views.py</li>
+				</ul>
+			<h5>Changed</h5>
+				<ul>
+					<li>The JS and HTML files for the files page to display the dates in the appropriate format</li>
+					<li>The files page was changed to display the system and company info</li>
+				</ul>
+			<hr>
+			<h4 class="version">Version 0.4 (10-31-2018)</h4>
+			<h5>Added</h5>
+				<ul>
+					<li>First white box tests were added into the tests.py file for Django's testing suite</li>
+				</ul>
+			<h5>Changed</h5>
+				<ul>
+					<li>importJson.py will now work with all OS types</li>
+					<li>files_page.html bug was fixed so search bar does not overflow over the card</li>
+					<li>urls.py to reflect the appropriate url names</li>
+					<li>views.py to use the generic list view provided by Django</li>
+					<li>Updated the systems_page.html file to no longer contain all the CSS code</li>
+				</ul>
+			<hr>
+			<h4 class="version">Version 0.3 (10-26-2018)</h4>
+			<h5>Added</h5>
+				<ul>
+					<li>System and file page HTML mockups to better represent the original design of the website</li>
+					<li>Help page to tell the user how to use the website</li>
+					<li>Dynamic page template based off of the HTML mockups previously mentioned</li>
+				</ul>
+			<h5>Changed</h5>
+				<ul>
+					<li>views.py and urls.py to reflect the addition of the help page</li>
+				</ul>
+			<hr>
+			<h4 class="version">Version 0.2 (10-18-2018)</h4>
+			<h5>Added</h5>
+				<ul>
+					<li>importJson.py script to allow for us to easily import json files into the database</li>
+					<li>tests.py to allow for automated testing using Django's testing suite</li>
+				</ul>
+			<h5>Changed</h5>
+				<ul>
+					<li>Django models.py file to reflect our design for the database</li>
+					<li>Django manage.py file to handle the exception of importJson not working</li>
+					<li>Django urls.py to contain the correct urls for our website</li>
+					<li>Django settings.py to add the PostgreSQL database</li>
+					<li>Django views.py to contain the appropriate view for both file and systems pages</li>
+				</ul>
+			<hr>
+			<h4 class="version">Version 0.1 (10-12-2018)</h4>
+			<h5>Added</h5>
+				<ul>
+					<li>Basic base HTML file to outline the design of our website</li>
+					<li>Basic Django file structure</li>
+					<li>Support files for DataTables, JQuery and Bootstrap</li>
+					<li>Navigation bar HTML file</li>
+				</ul>			
+		</div>
 	</div>
 </div>
-
-<script>
-$(document).ready(function(){
-    $(".nav-tabs a").click(function(){
-        $(this).tab('show');
-    });
-});
-</script>
 
 <!--
 <p>
