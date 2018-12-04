@@ -54,6 +54,9 @@ def importJson(app, tarFolder):
             print("found data")
             folder = folder + f_slash + file
 
+    #since we go through every file every time we run this, reset this field so that we count the correct value
+    System.objects.update(fileCount=0)
+
     #print ("folder then = %s " % folder)
     files = os.listdir(folder)
     for file in files:
@@ -79,6 +82,9 @@ def importJson(app, tarFolder):
                 #print(ex)
                 System.objects.create(serialNumberInserv = systemID)
                 sys = System.objects.get(pk = systemID)
+            sys.fileCount = sys.fileCount + 1
+            sys.save()
+            #print(sys.fileCount)
             fpath = "files" + f_slash + file
             File.objects.update_or_create(FileID = ID,
             defaults = { 'filePath' : fpath,'dataDate' : datadate, 'name' : file, 'SystemID' : sys, 'capacity' : freePct} )

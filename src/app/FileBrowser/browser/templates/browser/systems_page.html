@@ -33,11 +33,11 @@
 		<!-- Table -->
 		<tbody class="table-light">
 			{% if system_list %}			
-				{% for system, count in system_list %}
+				{% for system in system_list %}
 					<tr>
 						<td> <a href="{% url 'browser:files' system.serialNumberInserv %}"> {{system.serialNumberInserv}} </a> </td>
 						<td>{{system.name}}</td>
-						<td>{{count}}</td>
+						<td>{{system.fileCount}}</td>
 					</tr>
 				{% endfor %}
 			{% endif %}

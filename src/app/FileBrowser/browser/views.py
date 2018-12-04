@@ -34,11 +34,8 @@ def systems(request):
         return redirect("browser:login")
     username = str(request.session['username'])
     system_list = System.objects.filter(tenants__contains = [username]).order_by('serialNumberInserv')[:100]
-    counts = []
-    for system in system_list:
-        counts.append(File.objects.filter(SystemID = system.serialNumberInserv).count())
-    system_count_list = zip(system_list, counts)
-    return render(request, 'browser/systems_page.html', {'system_list' : system_count_list})
+
+    return render(request, 'browser/systems_page.html', {'system_list' : system_list})
 
 
 def files(request, serialNumberInserv):
