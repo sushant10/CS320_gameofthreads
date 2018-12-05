@@ -70,23 +70,28 @@ def importJson(app, tarFolder):
             systemID = file.split('-')[0]
             companyName = j['system']['companyName']
             tenants = j['authorized']['tenants']
+            freePct = round(j['capacity']['total']['freePct'], 3)
             try:
-                System.objects.update_or_create(serialNumberInserv = systemID, defaults = {'name': companyName, 'tenants': tenants})
+                sys = System.objects.get(pk = systemID)
+                if(sys.recentDate < datadate):
+                       System.objects.update_or_create(serialNumberInserv = systemID, defaults = {'name': companyName, 'tenants': tenants, 'recentDate' : datadate, 'capacity' : freePct})      
+          		
                 sys = System.objects.get(pk = systemID)
                 #print("created file with %s ID, %s path" % (ID, path))
             except Exception as ex:
-                #print(ex)
-                System.objects.create(serialNumberInserv = systemID)
+                print(ex)
+                System.objects.update_or_create(serialNumberInserv = systemID, defaults = {'name': companyName, 'tenants': tenants, 'recentDate' : datadate, 'capacity' : freePct})      
                 sys = System.objects.get(pk = systemID)
+
             fpath = "files" + f_slash + file
             File.objects.update_or_create(FileID = ID,
-             defaults = { 'filePath' : fpath,'dataDate' : datadate, 'name' : file, 'SystemID' : sys} )
+            defaults = { 'filePath' : fpath,'dataDate' : datadate, 'name' : file, 'SystemID' : sys, 'capacity' : freePct} )
 
         except Exception as e:
             print(e)
 
-def createFile(ID, filepath, datadate, Name, systemid):
-    File.objects.create(FileID = ID, filePath = filepath, dataDate = datadate, name = Name,SystemID = systemid)
+def createFile(ID, filepath, datadate, Name, systemid, freePct):
+    File.objects.create(FileID = ID, filePath = filepath, dataDate = datadate, name = Name,SystemID = systemid, capacity = freePct)
 
-def createSystem(Serial, Name):
-    System.objects.create(serialNumberInserv = Serial, name = Name)
+def createSystem(Serial, Name, datadate, freePct):
+    System.objects.create(serialNumberInserv = Serial, name = Name, recentDate = datadate, capacity = freePct)

@@ -17,27 +17,31 @@
 
 	<!-- Systems Table -->
 	<table id="systems-table" class="table table-bordered my-5 browser-table">
-		<col width= "33.33333%">
-		<col width= "33.33333%">
-		<col width= "33.33333%">
+		<col width= "25%">
+		<col width= "25%">
+		<col width= "25%">
+		<col width= "25%">
 
 		<!-- Column Headers -->
 		<thead>
 			<tr class="table-secondary">
 				<th>System ID</th>
 				<th>Company Name</th> 
-				<th>Number of Files</th>
+				<th>Most Recent File Date</th>
+				<th>Free Capacity</th>
 			</tr>
 		</thead>
 
 		<!-- Table -->
 		<tbody class="table-light">
 			{% if system_list %}			
-				{% for system, count in system_list %}
-					<tr>
+				{% for system in system_list %}
+					<tr> 
 						<td> <a href="{% url 'browser:files' system.serialNumberInserv %}"> {{system.serialNumberInserv}} </a> </td>
 						<td>{{system.name}}</td>
-						<td>{{count}}</td>
+						<td>{{system.recentDate}}</td>
+
+						<td class="capacity">{{system.capacity}}%</td>						
 					</tr>
 				{% endfor %}
 			{% endif %}
