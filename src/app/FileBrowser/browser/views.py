@@ -26,6 +26,9 @@ class dtSystems(BaseDatatableView):
     order_columns = ["serialNumberInserv", "name", "recentDate", "capacity"]
 
     def filter_queryset(self, qs):
+        search = self.request.GET.get('search[value]', None)
+        if search:
+            qs = qs.filter(name__istartswith=search)
         username = str(self.request.session['username'])
         return qs.filter(tenants__contains = [username])
 
