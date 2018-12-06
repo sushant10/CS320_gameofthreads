@@ -9,6 +9,14 @@ For HPE support users who need to download specific HPE system files, FileSublim
 **Django version**: 2.1.1  
 **PostgreSQL version**: 10  
 
+### Getting Started
+To get this project up and running on your computer, you first need to install all the necessary frameworks and clone this repository onto your computer. Then, make sure you have a working install of Python 3 on your computer.
+
+Next, install Django using either pip install django or by following this site https://docs.djangoproject.com/en/2.1/intro/install/.
+
+You then need to download and install PostgreSQL by following these instructions https://docs.google.com/document/d/1NCx2q0U3q0VcgsMp5Eqq_OFFOb0YKr6My26RTzn6EI4/edit?usp=sharing.
+
+From there, you should be able to run the server and browse and download files.
 
 File structure to follow (Subject to change)
 
@@ -44,9 +52,7 @@ File structure to follow (Subject to change)
 **js**: will contain bootstrap, JQuery and other files   
 **templates**: will contain all the django template files for each page  
 
-  Setup Instructions:
-  https://docs.google.com/document/d/1NCx2q0U3q0VcgsMp5Eqq_OFFOb0YKr6My26RTzn6EI4/edit?usp=sharing
-
-**Commands** (These should be run from the directory with manage.py):  
+### Commands:
 **Import Files**: python3 manage.py importJson (app) (TargetFolder)  
 **Add User**: python3 manage.py add_User (tenant name) (password) (role=admin)  
+Note: These should be run from the directory with manage.py
