@@ -13,12 +13,18 @@ import json
 from django.utils.encoding import smart_str
 import os
 from sys import platform
+from django_datatables_view.base_datatable_view import BaseDatatableView
 
 # Create your views here.
 """
 def index(request):
     return HttpResponse("Welcome to HPE File Browser 0.0.1")
 """
+class dtSystems(BaseDatatableView):
+	model = System
+	columns = ["serialNumberInserv", "name", "recentDate", "capacity"]
+	order_columns = ["serialNumberInserv", "name", "recentDate", "capacity"]
+
 class IndexView(generic.ListView):
     template_name = 'browser/files_page.html'
     context_object_name = 'file_list'

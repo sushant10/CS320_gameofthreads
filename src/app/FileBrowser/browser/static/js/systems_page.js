@@ -2,14 +2,27 @@ $(document).ready(function(){
 	$('#systems-table').DataTable({
 		scrollY:        400,
 		scrollCollapse: true,
-		paging:         false,
+		paging:         true,
+		serverSide: 	true,
+		ajax: 		"dt/",		
 		"order": 		[[ 0, "asc"]], 
+		"aoColumns": [
+		{
+			"mRender": function (data, type, row){
+				return "<a href=" + row[0] + ">" + row[0] + "</a>";
+			}
+		},
+		{},
+		{},
+		{}
+		],
 		fixedColumns:   {
 			heightMatch: 'none'
 		}
 	});
+});
 	
-	$(".capacity").each(function(){
+/*	$(".capacity").each(function(){
 		var capacity_string = $(this).html();
 		var capacity = capacity_string.substr(0, capacity_string.length - 1)/100.0;		
 		capacity /= 0.3 
@@ -24,7 +37,7 @@ $(document).ready(function(){
 	})
 	
 });
-
+*/
 $(window).resize(function(){
 	$('#systems-table').DataTable().draw();
 });
