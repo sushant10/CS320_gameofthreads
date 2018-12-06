@@ -5,6 +5,7 @@ app_name = 'browser'
 urlpatterns = [
     path('', views.systems, name = 'systems' ),
     path('help/', views.help, name = 'help'),
+    path('systems/dt/', views.dtSystems.as_view(), name = 'dt'),
     path('systems/<int:serialNumberInserv>', views.files, name = 'files'),
     path('systems/', views.systems, name = 'systems' ),
     path('download/<slug:fileID>', views.download, name = 'download'),
