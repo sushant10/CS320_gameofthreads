@@ -21,23 +21,13 @@ def index(request):
     return HttpResponse("Welcome to HPE File Browser 0.0.1")
 """
 class dtSystems(BaseDatatableView):
-	model = System
-	columns = ["serialNumberInserv", "name", "recentDate", "capacity"]
-	order_columns = ["serialNumberInserv", "name", "recentDate", "capacity"]
+    model = System
+    columns = ["serialNumberInserv", "name", "recentDate", "capacity"]
+    order_columns = ["serialNumberInserv", "name", "recentDate", "capacity"]
 
-class IndexView(generic.ListView):
-    template_name = 'browser/files_page.html'
-    context_object_name = 'file_list'
-
-    def get_queryset(self):
-        return File.objects.all().order_by('-SystemID')[:100]
-
-class SystemView(generic.ListView):
-    template_name = 'browser/systems_page.html'
-    context_object_name = 'system_list'
-
-    def get_queryset(self):
-        return System.objects.all().order_by('-serialNumberInserv')[:100]
+    def filter_queryset(self, qs):
+        username = str(self.request.session['username'])
+        return qs.filter(tenants__contains = [username])
 
 def systems(request):
     if not request.session.has_key('username'):
