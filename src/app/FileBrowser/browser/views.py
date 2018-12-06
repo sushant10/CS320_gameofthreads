@@ -108,3 +108,6 @@ def logoutView(request):
     except:
       pass
     return redirect("browser:login")
+
+def default(request):
+    return redirect("browser:systems")
