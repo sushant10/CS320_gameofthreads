@@ -1,0 +1,237 @@
+{
+  "serialNumberInserv" : "4303431",
+  "system" : {
+    "companyName" : "Vampire by Night",
+    "model" : "7200c",
+    "fullModel" : "HPE_3PAR 7200c",
+    "osVersion" : "3.3.1.410 (MU2)",
+    "patches" : [ "P30", "P32" ],
+    "sp" : {
+      "spId" : "8592929",
+      "spModel" : "Virtual Machine",
+      "spVersion" : "5.0.3.1-25112",
+      "spPatches" : [ "1" ]
+    },
+    "productSKU" : "E7X67A",
+    "productFamily" : "7000",
+    "recommended" : {
+      "criticalPatches" : [ "P38" ],
+      "conditionalPatches" : [ "P37" ]
+    },
+    "portsHWInfo" : [ {
+      "nsp" : "0:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0A0X7HFLX"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0A0X7HFLD"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0A0X7HFLD"
+    }, {
+      "nsp" : "0:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0A0X7HFLX"
+    }, {
+      "nsp" : "1:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 9.8740234375,
+      "sizeTiB" : 8.53125,
+      "freeTiB" : 1.658203125,
+      "freePct" : 19.436813354492188,
+      "allocatedCapacityTiB" : 6.873046875,
+      "failedCapacityTiB" : 0,
+      "systemAllocatedTiB" : 1.83203125,
+      "volumesAllocatedTiB" : 5.041015625,
+      "otherAllocatedTiB" : 0,
+      "volumesVirtualSizeTiB" : 22.4384765625,
+      "usedSpaceTiB" : 2.468505859375,
+      "compactionRatio" : 8.649999618530273,
+      "overprovisioningRatio" : 3.75
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 8.53125,
+        "freeTiB" : 1.658203125,
+        "freePct" : 19.436813354492188,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "NoFlashArray"
+  },
+  "performance" : {
+    "portBandwidthData" : {
+      "total" : {
+        "dataRateKBPSAvg" : 6418,
+        "dataRateKBPSMax" : 34934,
+        "dataRateKBPSMin" : 678,
+        "iopsAvg" : 215,
+        "iopsMax" : 653,
+        "iopsMin" : 122,
+        "ioSizeAvg" : 10.691767692565918,
+        "ioSizeMax" : 64,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 1,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 5.7448835372924805,
+        "serviceTimeMSMax" : 11,
+        "serviceTimeMSMin" : 0
+      },
+      "read" : {
+        "dataRateKBPSAvg" : 5787,
+        "dataRateKBPSMax" : 34291,
+        "dataRateKBPSMin" : 54,
+        "iopsAvg" : 106,
+        "iopsMax" : 542,
+        "iopsMin" : 15,
+        "ioSizeAvg" : 14.369999885559082,
+        "ioSizeMax" : 64,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 1.5313208103179932,
+        "serviceTimeMSMax" : 22,
+        "serviceTimeMSMin" : 0
+      },
+      "write" : {
+        "dataRateKBPSAvg" : 631,
+        "dataRateKBPSMax" : 648,
+        "dataRateKBPSMin" : 620,
+        "iopsAvg" : 109,
+        "iopsMax" : 111,
+        "iopsMin" : 107,
+        "ioSizeAvg" : 5.879082679748535,
+        "ioSizeMax" : 8,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 3.724954128265381,
+        "serviceTimeMSMax" : 39,
+        "serviceTimeMSMin" : 0
+      }
+    },
+    "summary" : {
+      "portInfo" : {
+        "readServiceTimeColMillis" : 1.5313208103179932,
+        "writeServiceTimeColMillis" : 3.724954128265381,
+        "totalServiceTimeColMillis" : 5.7448835372924805
+      }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 16,
+      "diskCountNormal" : 16
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 16,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 16,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 42,
+    "cageCount" : 1,
+    "cpuAvgMax" : 1,
+    "cpuMedianMax" : 1
+  },
+  "updated" : "2018-10-26T04:11:42Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2018-10-26T04:11:42Z"
+}

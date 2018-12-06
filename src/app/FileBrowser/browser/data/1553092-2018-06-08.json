@@ -1,0 +1,238 @@
+{
+  "serialNumberInserv" : "1553092",
+  "system" : {
+    "companyName" : "Steel Spider",
+    "model" : "5240",
+    "fullModel" : "HPE_3PAR 5240",
+    "osVersion" : "3.3.1.391-20180511.145028 (MU3)",
+    "patches" : [ ],
+    "sp" : {
+      "spId" : "6074030",
+      "spModel" : "VMware Virtual Platform",
+      "spVersion" : "5.1.0.0-24710"
+    },
+    "productSKU" : "",
+    "productFamily" : "5000",
+    "portsHWInfo" : [ {
+      "nsp" : "0:9:1",
+      "brand" : "Intel",
+      "model" : "igb",
+      "firmware" : "5.3.0-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:1",
+      "brand" : "LSI",
+      "model" : "9300-2x4DP",
+      "rev" : "02",
+      "firmware" : "10.10.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "QLOGIC",
+      "model" : "EP8324",
+      "rev" : "02",
+      "firmware" : "5.7.36",
+      "serial" : "PEYWVX2LM8G00H"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "LSI",
+      "model" : "9300-2x4DP",
+      "rev" : "02",
+      "firmware" : "10.10.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "QLOGIC",
+      "model" : "EP8324",
+      "rev" : "02",
+      "firmware" : "5.7.36",
+      "serial" : "PEYWVX2LM8G00H"
+    }, {
+      "nsp" : "0:2:2",
+      "brand" : "HPE",
+      "model" : "560SFP+",
+      "firmware" : "4.4.0-k-rh7.3",
+      "serial" : "FC15B4798F59"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "QLOGIC",
+      "model" : "EP8324",
+      "rev" : "02",
+      "firmware" : "5.7.36",
+      "serial" : "PEYWVX2LM8G013"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "LSI",
+      "model" : "9300-2x4DP",
+      "rev" : "02",
+      "firmware" : "10.10.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:1",
+      "brand" : "HPE",
+      "model" : "560SFP+",
+      "firmware" : "4.4.0-k-rh7.3",
+      "serial" : "FC15B4798FE8"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "QLOGIC",
+      "model" : "EP8324",
+      "rev" : "02",
+      "firmware" : "5.7.36",
+      "serial" : "PEYWVX2LM8G013"
+    }, {
+      "nsp" : "1:9:1",
+      "brand" : "Intel",
+      "model" : "igb",
+      "firmware" : "5.3.0-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:2",
+      "brand" : "HPE",
+      "model" : "560SFP+",
+      "firmware" : "4.4.0-k-rh7.3",
+      "serial" : "FC15B4798FE9"
+    }, {
+      "nsp" : "0:2:1",
+      "brand" : "HPE",
+      "model" : "560SFP+",
+      "firmware" : "4.4.0-k-rh7.3",
+      "serial" : "FC15B4798F58"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "LSI",
+      "model" : "9300-2x4DP",
+      "rev" : "02",
+      "firmware" : "10.10.03.00",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 0.078125,
+      "sizeTiB" : 11.3828125,
+      "freeTiB" : 8.3916015625,
+      "freePct" : 73.72168731689453,
+      "allocatedCapacityTiB" : 2.9912109375,
+      "failedCapacityTiB" : 0,
+      "systemAllocatedTiB" : 2.9912109375,
+      "volumesAllocatedTiB" : 0,
+      "otherAllocatedTiB" : 0,
+      "overprovisioningRatio" : 0.019999999552965164
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 6.390625,
+        "freeTiB" : 5.1416015625,
+        "freePct" : 80.45538330078125,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "ssd" : {
+        "sizeTiB" : 4.9921875,
+        "freeTiB" : 3.25,
+        "freePct" : 65.10171508789062,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "MixedArray"
+  },
+  "performance" : {
+    "portBandwidthData" : {
+      "total" : {
+        "dataRateKBPSAvg" : 0,
+        "dataRateKBPSMax" : 0,
+        "dataRateKBPSMin" : 0,
+        "iopsAvg" : 0,
+        "iopsMax" : 0,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 0,
+        "ioSizeMax" : 0,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      },
+      "read" : {
+        "dataRateKBPSAvg" : 0,
+        "dataRateKBPSMax" : 0,
+        "dataRateKBPSMin" : 0,
+        "iopsAvg" : 0,
+        "iopsMax" : 0,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 0,
+        "ioSizeMax" : 0,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      },
+      "write" : {
+        "dataRateKBPSAvg" : 0,
+        "dataRateKBPSMax" : 0,
+        "dataRateKBPSMin" : 0,
+        "iopsAvg" : 0,
+        "iopsMax" : 0,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 0,
+        "ioSizeMax" : 0,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      }
+    },
+    "summary" : {
+      "portInfo" : {
+        "readServiceTimeColMillis" : 0,
+        "writeServiceTimeColMillis" : 0,
+        "totalServiceTimeColMillis" : 0
+      }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 22,
+      "diskCountNormal" : 22
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 16,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 16,
+        "state" : "normal"
+      },
+      "ssd" : {
+        "diskCount" : 6,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 6,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 4,
+    "cpuAvgMax" : 1,
+    "cpuMedianMax" : 1
+  },
+  "updated" : "2018-06-08T19:40:39Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2018-06-08T19:40:39Z"
+}

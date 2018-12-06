@@ -1,0 +1,235 @@
+{
+  "serialNumberInserv" : "4637932",
+  "system" : {
+    "companyName" : "Doctor Bong",
+    "model" : "8200",
+    "fullModel" : "HPE_3PAR 8200",
+    "osVersion" : "3.3.1.269 (MU1)",
+    "patches" : [ "P09", "P11", "P18", "P21", "P24" ],
+    "sp" : {
+      "spId" : "641988",
+      "spModel" : "VMware Virtual Platform",
+      "spVersion" : "5.0.3.0-24806"
+    },
+    "productSKU" : "K2Q36A",
+    "productFamily" : "8000",
+    "recommended" : {
+      "criticalPatches" : [ "P31", "P25" ],
+      "conditionalPatches" : [ "P19" ]
+    },
+    "portsHWInfo" : [ {
+      "nsp" : "0:0:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "7.00.00.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "7.00.00.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 31.605712890625,
+      "sizeTiB" : 73.69921875,
+      "freeTiB" : 31.107421875,
+      "freePct" : 42.2086181640625,
+      "allocatedCapacityTiB" : 42.591796875,
+      "failedCapacityTiB" : 0,
+      "systemAllocatedTiB" : 4.658203125,
+      "volumesAllocatedTiB" : 37.93359375,
+      "otherAllocatedTiB" : 0,
+      "volumesVirtualSizeTiB" : 31.70361328125,
+      "usedSpaceTiB" : 27.2376708984375,
+      "compactionRatio" : 1,
+      "dedupeRatio" : 1.059999942779541,
+      "overprovisioningRatio" : 0.6200000047683716
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 26.15625,
+        "freeTiB" : 12.4970703125,
+        "freePct" : 47.778526306152344,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "nl" : {
+        "sizeTiB" : 42.31640625,
+        "freeTiB" : 16.9111328125,
+        "freePct" : 39.963539123535156,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "ssd" : {
+        "sizeTiB" : 5.2265625,
+        "freeTiB" : 1.69921875,
+        "freePct" : 32.51121139526367,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "MixedArray"
+  },
+  "performance" : {
+    "portBandwidthData" : {
+      "total" : {
+        "dataRateKBPSAvg" : 5,
+        "dataRateKBPSMax" : 10,
+        "dataRateKBPSMin" : 1,
+        "iopsAvg" : 1,
+        "iopsMax" : 4,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 4.199999809265137,
+        "ioSizeMax" : 9,
+        "ioSizeMin" : 2,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 1,
+        "serviceTimeMSMin" : 0
+      },
+      "read" : {
+        "dataRateKBPSAvg" : 0,
+        "dataRateKBPSMax" : 0,
+        "dataRateKBPSMin" : 0,
+        "iopsAvg" : 0,
+        "iopsMax" : 0,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 0,
+        "ioSizeMax" : 0,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      },
+      "write" : {
+        "dataRateKBPSAvg" : 5,
+        "dataRateKBPSMax" : 10,
+        "dataRateKBPSMin" : 1,
+        "iopsAvg" : 1,
+        "iopsMax" : 4,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 4.199999809265137,
+        "ioSizeMax" : 9,
+        "ioSizeMin" : 2,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 1,
+        "serviceTimeMSMin" : 0
+      }
+    },
+    "summary" : {
+      "portInfo" : {
+        "readServiceTimeColMillis" : 0,
+        "writeServiceTimeColMillis" : 0,
+        "totalServiceTimeColMillis" : 0
+      }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 48,
+      "diskCountNormal" : 48
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 24,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 24,
+        "state" : "normal"
+      },
+      "nl" : {
+        "diskCount" : 12,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 12,
+        "state" : "normal"
+      },
+      "ssd" : {
+        "diskCount" : 12,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 12,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 2,
+    "cpuAvgMax" : 8,
+    "cpuMedianMax" : 8
+  },
+  "updated" : "2018-09-09T14:28:21Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2018-09-09T14:28:21Z"
+}

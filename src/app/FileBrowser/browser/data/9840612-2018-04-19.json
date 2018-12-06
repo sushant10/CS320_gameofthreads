@@ -1,0 +1,232 @@
+{
+  "serialNumberInserv" : "9840612",
+  "system" : {
+    "companyName" : "Scorpia",
+    "model" : "7200",
+    "fullModel" : "HPE_3PAR 7200",
+    "osVersion" : "3.3.1.215",
+    "patches" : [ "P01", "P02", "P04", "P05", "P13", "P16" ],
+    "sp" : {
+      "spId" : "843729",
+      "spModel" : "ProLiant DL360e Gen8",
+      "spVersion" : "5.0.2.0-23974"
+    },
+    "productSKU" : "QR482A",
+    "productFamily" : "7000",
+    "portsHWInfo" : [ {
+      "nsp" : "0:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.2",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.2",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0AST3AD0H"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.2",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0AST4BNMY"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.2",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0AST4BNMY"
+    }, {
+      "nsp" : "0:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0AST3AD0H"
+    }, {
+      "nsp" : "1:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 50.736328125,
+      "sizeTiB" : 51.1875,
+      "freeTiB" : 13.83984375,
+      "freePct" : 27.037546157836914,
+      "allocatedCapacityTiB" : 37.34765625,
+      "failedCapacityTiB" : 0,
+      "systemAllocatedTiB" : 2.97265625,
+      "volumesAllocatedTiB" : 34.375,
+      "otherAllocatedTiB" : 0,
+      "volumesVirtualSizeTiB" : 50.736328125,
+      "usedSpaceTiB" : 24.666259765625,
+      "compactionRatio" : 1.9500000476837158,
+      "overprovisioningRatio" : 1.0499999523162842
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 51.1875,
+        "freeTiB" : 13.83984375,
+        "freePct" : 27.037546157836914,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "NoFlashArray"
+  },
+  "performance" : {
+    "portBandwidthData" : {
+      "total" : {
+        "dataRateKBPSAvg" : 0,
+        "dataRateKBPSMax" : 0,
+        "dataRateKBPSMin" : 0,
+        "iopsAvg" : 0,
+        "iopsMax" : 0,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 0,
+        "ioSizeMax" : 0,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      },
+      "read" : {
+        "dataRateKBPSAvg" : 0,
+        "dataRateKBPSMax" : 0,
+        "dataRateKBPSMin" : 0,
+        "iopsAvg" : 0,
+        "iopsMax" : 0,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 0,
+        "ioSizeMax" : 0,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      },
+      "write" : {
+        "dataRateKBPSAvg" : 0,
+        "dataRateKBPSMax" : 0,
+        "dataRateKBPSMin" : 0,
+        "iopsAvg" : 0,
+        "iopsMax" : 0,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 0,
+        "ioSizeMax" : 0,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      }
+    },
+    "summary" : {
+      "portInfo" : {
+        "readServiceTimeColMillis" : 0,
+        "writeServiceTimeColMillis" : 0,
+        "totalServiceTimeColMillis" : 0
+      }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 64,
+      "diskCountNormal" : 64
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 64,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 64,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 4,
+    "cpuAvgMax" : 2,
+    "cpuMedianMax" : 2
+  },
+  "updated" : "2018-04-19T06:54:44Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2018-04-19T06:54:44Z"
+}

@@ -1,0 +1,192 @@
+{
+  "serialNumberInserv" : "227848",
+  "system" : {
+    "companyName" : "Gregory Gideon",
+    "model" : "7400",
+    "fullModel" : "HPE_3PAR 7400",
+    "osVersion" : "3.3.1.269 (MU1)",
+    "patches" : [ "P09", "P11", "P18" ],
+    "sp" : {
+      "spId" : "3865668",
+      "spModel" : "HP Proliant",
+      "spVersion" : "4.4.0.GA-30",
+      "spInstallVersion" : "SP-4.4.0.GA-30"
+    },
+    "productSKU" : "",
+    "productFamily" : "7000",
+    "recommended" : {
+      "criticalPatches" : [ "P31", "P21", "P25" ],
+      "conditionalPatches" : [ "P19" ]
+    },
+    "portsHWInfo" : [ {
+      "nsp" : "0:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0AST4IN86"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0AST4IN75"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0AST4IN75"
+    }, {
+      "nsp" : "0:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0AST4IN86"
+    }, {
+      "nsp" : "1:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 7.919921875,
+      "sizeTiB" : 25.93359375,
+      "freeTiB" : 16.1953125,
+      "freePct" : 62.449161529541016,
+      "allocatedCapacityTiB" : 9.73828125,
+      "failedCapacityTiB" : 0,
+      "systemAllocatedTiB" : 3.79296875,
+      "volumesAllocatedTiB" : 5.90625,
+      "otherAllocatedTiB" : 0.0390625,
+      "volumesVirtualSizeTiB" : 7.919921875,
+      "usedSpaceTiB" : 5.859375,
+      "compactionRatio" : 2,
+      "overprovisioningRatio" : 0.36000001430511475
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 4.78125,
+        "freeTiB" : 0.2041015625,
+        "freePct" : 4.2687907218933105,
+        "freePctZeroPredictedDate" : "2018-08-07T11:08:33Z",
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "nl" : {
+        "sizeTiB" : 21.15234375,
+        "freeTiB" : 15.9912109375,
+        "freePct" : 75.60018157958984,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "NoFlashArray"
+  },
+  "performance" : {
+    "summary" : {
+      "portInfo" : { }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 24,
+      "diskCountNormal" : 24
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 12,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 12,
+        "state" : "normal"
+      },
+      "nl" : {
+        "diskCount" : 12,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 12,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 4
+  },
+  "updated" : "2018-06-07T11:08:33Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2018-06-07T11:08:33Z"
+}

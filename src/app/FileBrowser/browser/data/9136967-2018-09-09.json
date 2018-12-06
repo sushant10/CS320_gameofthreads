@@ -1,0 +1,210 @@
+{
+  "serialNumberInserv" : "9136967",
+  "system" : {
+    "companyName" : "Brigade",
+    "model" : "8200",
+    "fullModel" : "HPE_3PAR 8200",
+    "osVersion" : "3.3.1.410 (MU2)",
+    "patches" : [ ],
+    "sp" : {
+      "spId" : "7406356",
+      "spModel" : "ProLiant DL120 Gen9",
+      "spVersion" : "5.0.3.1-25112",
+      "spPatches" : [ "1" ]
+    },
+    "productSKU" : "K2Q36A",
+    "productFamily" : "8000",
+    "recommended" : {
+      "criticalPatches" : [ "P30" ],
+      "conditionalPatches" : [ "P32" ]
+    },
+    "portsHWInfo" : [ {
+      "nsp" : "0:0:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 39.208984375,
+      "sizeTiB" : 83.7890625,
+      "freeTiB" : 49.6650390625,
+      "freePct" : 59.27389144897461,
+      "allocatedCapacityTiB" : 34.1240234375,
+      "failedCapacityTiB" : 0,
+      "systemAllocatedTiB" : 7.3935546875,
+      "volumesAllocatedTiB" : 26.73046875,
+      "otherAllocatedTiB" : 0,
+      "volumesVirtualSizeTiB" : 39.208984375,
+      "usedSpaceTiB" : 22.2041015625,
+      "compactionRatio" : 1.7699999809265137,
+      "dedupeRatio" : 1.1399999856948853,
+      "overprovisioningRatio" : 0.4300000071525574
+    },
+    "byType" : {
+      "ssd" : {
+        "sizeTiB" : 83.7890625,
+        "freeTiB" : 49.6650390625,
+        "freePct" : 59.27389144897461,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "AllFlashArray"
+  },
+  "performance" : {
+    "portBandwidthData" : {
+      "total" : {
+        "dataRateKBPSAvg" : 5653,
+        "dataRateKBPSMax" : 9094,
+        "dataRateKBPSMin" : 734,
+        "iopsAvg" : 81,
+        "iopsMax" : 123,
+        "iopsMin" : 58,
+        "ioSizeAvg" : 67.31790161132812,
+        "ioSizeMax" : 116,
+        "ioSizeMin" : 12,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0.5,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0.6700000166893005,
+        "serviceTimeMSMax" : 1,
+        "serviceTimeMSMin" : 0
+      },
+      "read" : {
+        "dataRateKBPSAvg" : 3327,
+        "dataRateKBPSMax" : 6570,
+        "dataRateKBPSMin" : 173,
+        "iopsAvg" : 34,
+        "iopsMax" : 64,
+        "iopsMin" : 16,
+        "ioSizeAvg" : 135.0850067138672,
+        "ioSizeMax" : 360,
+        "ioSizeMin" : 11,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 1,
+        "serviceTimeMSMax" : 2,
+        "serviceTimeMSMin" : 0
+      },
+      "write" : {
+        "dataRateKBPSAvg" : 2324,
+        "dataRateKBPSMax" : 5853,
+        "dataRateKBPSMin" : 548,
+        "iopsAvg" : 48,
+        "iopsMax" : 59,
+        "iopsMin" : 42,
+        "ioSizeAvg" : 41.904998779296875,
+        "ioSizeMax" : 103,
+        "ioSizeMin" : 12,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0.33000001311302185,
+        "serviceTimeMSMax" : 1,
+        "serviceTimeMSMin" : 0
+      }
+    },
+    "summary" : {
+      "portInfo" : {
+        "readServiceTimeColMillis" : 1,
+        "writeServiceTimeColMillis" : 0.33000001311302185,
+        "totalServiceTimeColMillis" : 0.6700000166893005
+      }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 24,
+      "diskCountNormal" : 24
+    },
+    "byType" : {
+      "ssd" : {
+        "diskCount" : 24,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 24,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 1,
+    "cpuAvgMax" : 7,
+    "cpuMedianMax" : 9
+  },
+  "updated" : "2018-09-09T14:48:28Z",
+  "authorized" : {
+    "tenants" : [ "1259959463", "hpe" ]
+  },
+  "date" : "2018-09-09T14:48:28Z"
+}

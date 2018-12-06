@@ -1,0 +1,159 @@
+{
+  "serialNumberInserv" : "2910843",
+  "system" : {
+    "companyName" : "Callisto",
+    "model" : "8400",
+    "fullModel" : "HPE_3PAR 8400",
+    "osVersion" : "3.3.1.182 (DEVEL)",
+    "patches" : [ ],
+    "sp" : {
+      "spId" : "7664907",
+      "spModel" : "VMware Virtual Platform",
+      "spVersion" : "5.0.0.0-22515 (5.0 GA)"
+    },
+    "productSKU" : "H6Y96A",
+    "productFamily" : "8000",
+    "portsHWInfo" : [ {
+      "nsp" : "0:0:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.6",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.00.08.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.6",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.00.08.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.00.08.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.6",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.00.08.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.6",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 0.28125,
+      "sizeTiB" : 5.69921875,
+      "freeTiB" : 4.39453125,
+      "freePct" : 77.10760498046875,
+      "allocatedCapacityTiB" : 1.3046875,
+      "failedCapacityTiB" : 0,
+      "systemAllocatedTiB" : 1.236328125,
+      "volumesAllocatedTiB" : 0.068359375,
+      "otherAllocatedTiB" : 0,
+      "volumesVirtualSizeTiB" : 0.296875,
+      "usedSpaceTiB" : 0.01171875,
+      "compactionRatio" : 3.299999952316284,
+      "overprovisioningRatio" : 0.10000000149011612
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 4.25,
+        "freeTiB" : 3.5576171875,
+        "freePct" : 83.7086410522461,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "ssd" : {
+        "sizeTiB" : 1.44921875,
+        "freeTiB" : 0.8369140625,
+        "freePct" : 57.749324798583984,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100,
+        "lifeLeftPctMin" : 100
+      }
+    },
+    "arrayType" : "MixedArray"
+  },
+  "performance" : {
+    "summary" : {
+      "portInfo" : { }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 20,
+      "diskCountNormal" : 20
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 16,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 16,
+        "state" : "normal"
+      },
+      "ssd" : {
+        "diskCount" : 4,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 4,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 1
+  },
+  "updated" : "2017-12-02T01:55:07Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2017-12-02T01:55:07Z"
+}

@@ -1,0 +1,267 @@
+{
+  "serialNumberInserv" : "4700262",
+  "system" : {
+    "companyName" : "Agron",
+    "model" : "7450",
+    "fullModel" : "HPE_3PAR 7450",
+    "osVersion" : "3.3.1.414-20180510.142316 (MU3)",
+    "patches" : [ ],
+    "sp" : {
+      "spId" : "2152339",
+      "spModel" : "VMware Virtual Platform",
+      "spVersion" : "5.0.4.0-25445"
+    },
+    "productSKU" : "",
+    "productFamily" : "7000",
+    "portsHWInfo" : [ {
+      "nsp" : "0:2:4",
+      "brand" : "HPE",
+      "model" : "I350T4",
+      "firmware" : "5.3.0-k",
+      "serial" : "A45D36D20527"
+    }, {
+      "nsp" : "0:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.7",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:4",
+      "brand" : "HPE",
+      "model" : "I350T4",
+      "firmware" : "5.3.0-k",
+      "serial" : "A45D36D204FB"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.7",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:2:2",
+      "brand" : "HPE",
+      "model" : "I350T4",
+      "firmware" : "5.3.0-k",
+      "serial" : "A45D36D20525"
+    }, {
+      "nsp" : "1:2:3",
+      "brand" : "HPE",
+      "model" : "I350T4",
+      "firmware" : "5.3.0-k",
+      "serial" : "A45D36D204FA"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.7",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:1",
+      "brand" : "HPE",
+      "model" : "I350T4",
+      "firmware" : "5.3.0-k",
+      "serial" : "A45D36D204F8"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.7",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:2",
+      "brand" : "HPE",
+      "model" : "I350T4",
+      "firmware" : "5.3.0-k",
+      "serial" : "A45D36D204F9"
+    }, {
+      "nsp" : "0:2:1",
+      "brand" : "HPE",
+      "model" : "I350T4",
+      "firmware" : "5.3.0-k",
+      "serial" : "A45D36D20524"
+    }, {
+      "nsp" : "1:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:2:3",
+      "brand" : "HPE",
+      "model" : "I350T4",
+      "firmware" : "5.3.0-k",
+      "serial" : "A45D36D20526"
+    }, {
+      "nsp" : "0:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 0.126953125,
+      "sizeTiB" : 55.078125,
+      "freeTiB" : 50.5673828125,
+      "freePct" : 91.81028747558594,
+      "allocatedCapacityTiB" : 3.9736328125,
+      "failedCapacityTiB" : 0.537109375,
+      "systemAllocatedTiB" : 3.9091796875,
+      "volumesAllocatedTiB" : 0.08203125,
+      "otherAllocatedTiB" : 0,
+      "volumesVirtualSizeTiB" : 0.166015625,
+      "usedSpaceTiB" : 0.009765625,
+      "compactionRatio" : 4,
+      "overprovisioningRatio" : 0.009999999776482582
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 12.7734375,
+        "freeTiB" : 10.7216796875,
+        "freePct" : 83.93730926513672,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "nl" : {
+        "sizeTiB" : 42.3046875,
+        "freeTiB" : 39.845703125,
+        "freePct" : 94.18744659423828,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "NoFlashArray"
+  },
+  "performance" : {
+    "portBandwidthData" : {
+      "total" : {
+        "dataRateKBPSAvg" : 0,
+        "dataRateKBPSMax" : 0,
+        "dataRateKBPSMin" : 0,
+        "iopsAvg" : 0,
+        "iopsMax" : 0,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 0,
+        "ioSizeMax" : 0,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      },
+      "read" : {
+        "dataRateKBPSAvg" : 0,
+        "dataRateKBPSMax" : 0,
+        "dataRateKBPSMin" : 0,
+        "iopsAvg" : 0,
+        "iopsMax" : 0,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 0,
+        "ioSizeMax" : 0,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      },
+      "write" : {
+        "dataRateKBPSAvg" : 0,
+        "dataRateKBPSMax" : 0,
+        "dataRateKBPSMin" : 0,
+        "iopsAvg" : 0,
+        "iopsMax" : 0,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 0,
+        "ioSizeMax" : 0,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      }
+    },
+    "summary" : {
+      "portInfo" : {
+        "readServiceTimeColMillis" : 0,
+        "writeServiceTimeColMillis" : 0,
+        "totalServiceTimeColMillis" : 0
+      }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 60,
+      "diskCountNormal" : 59,
+      "diskCountFailed" : 1
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 36,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 35,
+        "diskCountFailed" : 1,
+        "state" : "failed"
+      },
+      "nl" : {
+        "diskCount" : 24,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 24,
+        "state" : "normal"
+      }
+    },
+    "state" : "failed"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 5,
+    "cpuAvgMax" : 1,
+    "cpuMedianMax" : 1
+  },
+  "updated" : "2018-08-22T16:18:02Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2018-08-22T16:18:02Z"
+}

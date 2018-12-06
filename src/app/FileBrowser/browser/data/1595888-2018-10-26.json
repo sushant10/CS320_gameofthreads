@@ -1,0 +1,616 @@
+{
+  "serialNumberInserv" : "1595888",
+  "system" : {
+    "companyName" : "Delphi",
+    "model" : "9450",
+    "fullModel" : "HPE_3PAR 9450",
+    "osVersion" : "3.3.1.410 (MU2)",
+    "patches" : [ "P32", "P34", "P40" ],
+    "sp" : {
+      "spId" : "557677",
+      "spModel" : "ProLiant DL120 Gen9",
+      "spVersion" : "5.0.4.0-25509"
+    },
+    "productSKU" : "Q0E92A",
+    "productFamily" : "9000",
+    "recommended" : {
+      "criticalPatches" : [ "P38", "P30" ],
+      "conditionalPatches" : [ "P37" ]
+    },
+    "portsHWInfo" : [ {
+      "nsp" : "1:4:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF7240433"
+    }, {
+      "nsp" : "3:1:3",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8801G"
+    }, {
+      "nsp" : "0:9:1",
+      "brand" : "Intel",
+      "model" : "ixgbe",
+      "firmware" : "4.2.1-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "2:5:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404GS"
+    }, {
+      "nsp" : "2:4:4",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404JF"
+    }, {
+      "nsp" : "3:4:3",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404D9"
+    }, {
+      "nsp" : "2:4:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404JF"
+    }, {
+      "nsp" : "1:1:3",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88009"
+    }, {
+      "nsp" : "1:5:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72403YP"
+    }, {
+      "nsp" : "0:2:4",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88016"
+    }, {
+      "nsp" : "1:4:3",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF7240433"
+    }, {
+      "nsp" : "3:9:1",
+      "brand" : "Intel",
+      "model" : "ixgbe",
+      "firmware" : "4.2.1-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8801K"
+    }, {
+      "nsp" : "2:2:3",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8800I"
+    }, {
+      "nsp" : "0:1:4",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8801K"
+    }, {
+      "nsp" : "3:2:4",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88019"
+    }, {
+      "nsp" : "1:5:4",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72403YP"
+    }, {
+      "nsp" : "0:4:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF724053B"
+    }, {
+      "nsp" : "1:2:4",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8800X"
+    }, {
+      "nsp" : "1:5:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72403YP"
+    }, {
+      "nsp" : "2:9:1",
+      "brand" : "Intel",
+      "model" : "ixgbe",
+      "firmware" : "4.2.1-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:5:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404FX"
+    }, {
+      "nsp" : "2:4:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404JF"
+    }, {
+      "nsp" : "3:4:4",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404D9"
+    }, {
+      "nsp" : "3:1:2",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8801G"
+    }, {
+      "nsp" : "2:2:4",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8800I"
+    }, {
+      "nsp" : "3:2:3",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88019"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8801K"
+    }, {
+      "nsp" : "3:5:4",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404DS"
+    }, {
+      "nsp" : "0:2:2",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88016"
+    }, {
+      "nsp" : "1:2:3",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8800X"
+    }, {
+      "nsp" : "2:1:4",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88014"
+    }, {
+      "nsp" : "0:4:3",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF724053B"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88009"
+    }, {
+      "nsp" : "3:5:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404DS"
+    }, {
+      "nsp" : "2:5:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404GS"
+    }, {
+      "nsp" : "3:1:1",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8801G"
+    }, {
+      "nsp" : "3:2:2",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88019"
+    }, {
+      "nsp" : "0:1:3",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8801K"
+    }, {
+      "nsp" : "0:5:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404FX"
+    }, {
+      "nsp" : "1:2:1",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8800X"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88009"
+    }, {
+      "nsp" : "3:4:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404D9"
+    }, {
+      "nsp" : "0:5:3",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404FX"
+    }, {
+      "nsp" : "0:4:4",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF724053B"
+    }, {
+      "nsp" : "1:9:1",
+      "brand" : "Intel",
+      "model" : "ixgbe",
+      "firmware" : "4.2.1-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:2",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8800X"
+    }, {
+      "nsp" : "2:4:3",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404JF"
+    }, {
+      "nsp" : "3:5:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404DS"
+    }, {
+      "nsp" : "0:2:1",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88016"
+    }, {
+      "nsp" : "2:2:1",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8800I"
+    }, {
+      "nsp" : "2:5:3",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404GS"
+    }, {
+      "nsp" : "2:1:3",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88014"
+    }, {
+      "nsp" : "3:1:4",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8801G"
+    }, {
+      "nsp" : "1:1:4",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88009"
+    }, {
+      "nsp" : "2:1:2",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88014"
+    }, {
+      "nsp" : "3:2:1",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88019"
+    }, {
+      "nsp" : "0:2:3",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88016"
+    }, {
+      "nsp" : "1:4:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF7240433"
+    }, {
+      "nsp" : "3:4:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404D9"
+    }, {
+      "nsp" : "0:5:4",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404FX"
+    }, {
+      "nsp" : "2:5:4",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404GS"
+    }, {
+      "nsp" : "1:4:4",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF7240433"
+    }, {
+      "nsp" : "0:4:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF724053B"
+    }, {
+      "nsp" : "3:5:3",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72404DS"
+    }, {
+      "nsp" : "1:5:3",
+      "brand" : "EMULEX",
+      "model" : "LPE16004",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "5CF72403YP"
+    }, {
+      "nsp" : "2:1:1",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN88014"
+    }, {
+      "nsp" : "2:2:2",
+      "brand" : "LSI",
+      "model" : "9300-4P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "EFEWAA2KN8800I"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 1040.1953125,
+      "sizeTiB" : 391.015625,
+      "freeTiB" : 31.5732421875,
+      "freePct" : 8.074675559997559,
+      "freePctZeroPredictedDate" : "2018-10-15T04:39:10Z",
+      "allocatedCapacityTiB" : 359.4423828125,
+      "failedCapacityTiB" : 0,
+      "systemAllocatedTiB" : 30.0908203125,
+      "volumesAllocatedTiB" : 329.3515625,
+      "otherAllocatedTiB" : 0,
+      "volumesVirtualSizeTiB" : 1360.1953125,
+      "usedSpaceTiB" : 281.403076171875,
+      "compactionRatio" : 5.150000095367432,
+      "compressionRatio" : 1.2999999523162842,
+      "dedupeRatio" : 1.1699999570846558,
+      "overprovisioningRatio" : 3.0199999809265137
+    },
+    "byType" : {
+      "ssd" : {
+        "sizeTiB" : 391.015625,
+        "freeTiB" : 31.5732421875,
+        "freePct" : 8.074675559997559,
+        "freePctZeroPredictedDate" : "2018-10-15T04:39:10Z",
+        "usedBalancedPct" : 99.22651672363281,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "AllFlashArray"
+  },
+  "performance" : {
+    "portBandwidthData" : {
+      "total" : {
+        "dataRateKBPSAvg" : 109042,
+        "dataRateKBPSMax" : 147181,
+        "dataRateKBPSMin" : 58815,
+        "iopsAvg" : 2092,
+        "iopsMax" : 3275,
+        "iopsMin" : 1397,
+        "ioSizeAvg" : 54.1150016784668,
+        "ioSizeMax" : 96,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0.75,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0.17000000178813934,
+        "serviceTimeMSMax" : 1,
+        "serviceTimeMSMin" : 0
+      },
+      "read" : {
+        "dataRateKBPSAvg" : 54597,
+        "dataRateKBPSMax" : 84243,
+        "dataRateKBPSMin" : 21793,
+        "iopsAvg" : 756,
+        "iopsMax" : 1361,
+        "iopsMin" : 349,
+        "ioSizeAvg" : 81.22000122070312,
+        "ioSizeMax" : 174,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0.1599999964237213,
+        "serviceTimeMSMax" : 1,
+        "serviceTimeMSMin" : 0
+      },
+      "write" : {
+        "dataRateKBPSAvg" : 54445,
+        "dataRateKBPSMax" : 84477,
+        "dataRateKBPSMin" : 36942,
+        "iopsAvg" : 1335,
+        "iopsMax" : 1913,
+        "iopsMin" : 980,
+        "ioSizeAvg" : 41.150028228759766,
+        "ioSizeMax" : 72,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0.17000000178813934,
+        "serviceTimeMSMax" : 1,
+        "serviceTimeMSMin" : 0
+      }
+    },
+    "summary" : {
+      "portInfo" : {
+        "readServiceTimeColMillis" : 0.1599999964237213,
+        "writeServiceTimeColMillis" : 0.17000000178813934,
+        "totalServiceTimeColMillis" : 0.17000000178813934
+      }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 112,
+      "diskCountNormal" : 112
+    },
+    "byType" : {
+      "ssd" : {
+        "diskCount" : 112,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 112,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 4,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 8,
+    "cpuAvgMax" : 19,
+    "cpuMedianMax" : 20
+  },
+  "updated" : "2018-10-26T10:26:28Z",
+  "authorized" : {
+    "tenants" : [ "1689953951", "hpe" ]
+  },
+  "date" : "2018-10-26T10:26:28Z"
+}

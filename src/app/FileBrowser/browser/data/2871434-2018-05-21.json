@@ -1,0 +1,101 @@
+{
+  "serialNumberInserv" : "2871434",
+  "system" : {
+    "model" : "8450",
+    "fullModel" : "HPE_3PAR 8450",
+    "osVersion" : "3.3.1.407 (MU3)",
+    "patches" : [ ],
+    "sp" : {
+      "spId" : "274618",
+      "spModel" : "VMware Virtual Platform",
+      "spVersion" : "4.4.{VVWWN119931}.GA-103",
+      "spInstallVersion" : "SP-4.4.{VVWWN119931}.GA-97"
+    },
+    "productSKU" : "",
+    "productFamily" : "8000",
+    "portsHWInfo" : [ { }, { }, { }, { }, { } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 65.7265625,
+      "sizeTiB" : 31.59765625,
+      "freeTiB" : 21.923828125,
+      "freePct" : 69.38434600830078,
+      "allocatedCapacityTiB" : 9.673828125,
+      "systemAllocatedTiB" : 4.404296875,
+      "volumesAllocatedTiB" : 5.23046875,
+      "volumesVirtualSizeTiB" : 66.1826171875,
+      "usedSpaceTiB" : 0.6165771484375,
+      "compactionRatio" : 25,
+      "overprovisioningRatio" : 4.840000152587891
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 6.5625,
+        "freeTiB" : 3.357421875,
+        "freePct" : 51.16071701049805,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "nl" : {
+        "sizeTiB" : 21.15234375,
+        "freeTiB" : 15.4873046875,
+        "freePct" : 73.21791076660156,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "ssd" : {
+        "sizeTiB" : 3.484375,
+        "freeTiB" : 2.935546875,
+        "freePct" : 84.2488784790039,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "MixedArray"
+  },
+  "performance" : {
+    "summary" : {
+      "portInfo" : { }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 33,
+      "diskCountNormal" : 33
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 13,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 13,
+        "state" : "normal"
+      },
+      "nl" : {
+        "diskCount" : 12,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 12,
+        "state" : "normal"
+      },
+      "ssd" : {
+        "diskCount" : 8,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 8,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 1,
+    "nodeCountOffline" : -1,
+    "nodeCountMissing" : 1,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 4
+  },
+  "updated" : "2018-05-21T15:03:17Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2018-05-21T15:03:17Z"
+}

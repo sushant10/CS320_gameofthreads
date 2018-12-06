@@ -1,0 +1,230 @@
+{
+  "serialNumberInserv" : "5450051",
+  "system" : {
+    "companyName" : "Maynard Tiboldt",
+    "model" : "7440c",
+    "fullModel" : "HPE_3PAR 7440c",
+    "osVersion" : "3.3.1.413 (MU3)",
+    "patches" : [ ],
+    "sp" : {
+      "spId" : "5200088",
+      "spModel" : "VMware Virtual Platform",
+      "spVersion" : "5.0.3.0-24757"
+    },
+    "productSKU" : "E7X80A",
+    "productFamily" : "7000",
+    "portsHWInfo" : [ {
+      "nsp" : "0:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.7",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.7",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:2:2",
+      "brand" : "HPE",
+      "model" : "560SFP+",
+      "firmware" : "4.4.0-k-rh7.3",
+      "serial" : "MYI50805GH"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.7",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:1",
+      "brand" : "HPE",
+      "model" : "560SFP+",
+      "firmware" : "4.4.0-k-rh7.3",
+      "serial" : "MYI5070KYN"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.7",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:2",
+      "brand" : "HPE",
+      "model" : "560SFP+",
+      "firmware" : "4.4.0-k-rh7.3",
+      "serial" : "MYI5070KYN"
+    }, {
+      "nsp" : "0:2:1",
+      "brand" : "HPE",
+      "model" : "560SFP+",
+      "firmware" : "4.4.0-k-rh7.3",
+      "serial" : "MYI50805GH"
+    }, {
+      "nsp" : "1:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 0.869140625,
+      "sizeTiB" : 47.8125,
+      "freeTiB" : 43.830078125,
+      "freePct" : 91.6707534790039,
+      "allocatedCapacityTiB" : 3.583984375,
+      "failedCapacityTiB" : 0.3984375,
+      "systemAllocatedTiB" : 2.509765625,
+      "volumesAllocatedTiB" : 1.07421875,
+      "otherAllocatedTiB" : 0,
+      "volumesVirtualSizeTiB" : 0.869140625,
+      "usedSpaceTiB" : 0.22314453125,
+      "compactionRatio" : 4.78000020980835,
+      "overprovisioningRatio" : 0.029999999329447746
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 47.8125,
+        "freeTiB" : 43.830078125,
+        "freePct" : 91.6707534790039,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "NoFlashArray"
+  },
+  "performance" : {
+    "portBandwidthData" : {
+      "total" : {
+        "dataRateKBPSAvg" : 57,
+        "dataRateKBPSMax" : 144,
+        "dataRateKBPSMin" : 0,
+        "iopsAvg" : 4,
+        "iopsMax" : 6,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 9.329999923706055,
+        "ioSizeMax" : 23,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      },
+      "read" : {
+        "dataRateKBPSAvg" : 50,
+        "dataRateKBPSMax" : 142,
+        "dataRateKBPSMin" : 0,
+        "iopsAvg" : 1,
+        "iopsMax" : 4,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 20.670000076293945,
+        "ioSizeMax" : 39,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      },
+      "write" : {
+        "dataRateKBPSAvg" : 7,
+        "dataRateKBPSMax" : 20,
+        "dataRateKBPSMin" : 0,
+        "iopsAvg" : 3,
+        "iopsMax" : 6,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 1.6699999570846558,
+        "ioSizeMax" : 4,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      }
+    },
+    "summary" : {
+      "portInfo" : {
+        "readServiceTimeColMillis" : 0,
+        "writeServiceTimeColMillis" : 0,
+        "totalServiceTimeColMillis" : 0
+      }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 120,
+      "diskCountNormal" : 119,
+      "diskCountFailed" : 1
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 120,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 119,
+        "diskCountFailed" : 1,
+        "state" : "failed"
+      }
+    },
+    "state" : "failed"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 5,
+    "cpuAvgMax" : 2,
+    "cpuMedianMax" : 2
+  },
+  "updated" : "2018-09-09T13:35:13Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2018-09-09T13:35:13Z"
+}

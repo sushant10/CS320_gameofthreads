@@ -1,0 +1,235 @@
+{
+  "serialNumberInserv" : "7757434",
+  "system" : {
+    "companyName" : "Samuel Guthrie",
+    "model" : "8200",
+    "fullModel" : "HPE_3PAR 8200",
+    "osVersion" : "3.3.1.410 (MU2)",
+    "patches" : [ "P32", "P34", "P37", "P40" ],
+    "sp" : {
+      "spId" : "3520913",
+      "spModel" : "VMware Virtual Platform",
+      "spVersion" : "5.0.3.1-25112",
+      "spPatches" : [ "1" ]
+    },
+    "productSKU" : "K2Q36B",
+    "productFamily" : "8000",
+    "recommended" : {
+      "criticalPatches" : [ "P38", "P30" ]
+    },
+    "portsHWInfo" : [ {
+      "nsp" : "0:0:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 26.5693359375,
+      "sizeTiB" : 86.56640625,
+      "freeTiB" : 70.72265625,
+      "freePct" : 81.69757843017578,
+      "allocatedCapacityTiB" : 15.84375,
+      "failedCapacityTiB" : 0,
+      "systemAllocatedTiB" : 5.31640625,
+      "volumesAllocatedTiB" : 10.52734375,
+      "otherAllocatedTiB" : 0,
+      "volumesVirtualSizeTiB" : 26.5693359375,
+      "usedSpaceTiB" : 8.7327880859375,
+      "compactionRatio" : 3.059999942779541,
+      "overprovisioningRatio" : 0.3700000047683716
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 39.2578125,
+        "freeTiB" : 32.54296875,
+        "freePct" : 82.89552307128906,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "nl" : {
+        "sizeTiB" : 42.31640625,
+        "freeTiB" : 34.51953125,
+        "freePct" : 81.57481384277344,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "ssd" : {
+        "sizeTiB" : 4.9921875,
+        "freeTiB" : 3.66015625,
+        "freePct" : 73.31768035888672,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100,
+        "lifeLeftPctMin" : 100
+      }
+    },
+    "arrayType" : "MixedArray"
+  },
+  "performance" : {
+    "portBandwidthData" : {
+      "total" : {
+        "dataRateKBPSAvg" : 16460,
+        "dataRateKBPSMax" : 16460,
+        "dataRateKBPSMin" : 16460,
+        "iopsAvg" : 1862,
+        "iopsMax" : 1862,
+        "iopsMin" : 1862,
+        "ioSizeAvg" : 9.034586906433105,
+        "ioSizeMax" : 10,
+        "ioSizeMin" : 8,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 1,
+        "serviceTimeMSMax" : 1,
+        "serviceTimeMSMin" : 1
+      },
+      "read" : {
+        "dataRateKBPSAvg" : 13177,
+        "dataRateKBPSMax" : 13177,
+        "dataRateKBPSMin" : 13177,
+        "iopsAvg" : 1586,
+        "iopsMax" : 1586,
+        "iopsMin" : 1586,
+        "ioSizeAvg" : 8,
+        "ioSizeMax" : 8,
+        "ioSizeMin" : 8,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 1,
+        "serviceTimeMSMax" : 1,
+        "serviceTimeMSMin" : 1
+      },
+      "write" : {
+        "dataRateKBPSAvg" : 3280,
+        "dataRateKBPSMax" : 3280,
+        "dataRateKBPSMin" : 3280,
+        "iopsAvg" : 276,
+        "iopsMax" : 276,
+        "iopsMin" : 276,
+        "ioSizeAvg" : 11.778696060180664,
+        "ioSizeMax" : 15,
+        "ioSizeMin" : 9,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0,
+        "serviceTimeMSMax" : 0,
+        "serviceTimeMSMin" : 0
+      }
+    },
+    "summary" : {
+      "portInfo" : {
+        "readServiceTimeColMillis" : 1,
+        "writeServiceTimeColMillis" : 0,
+        "totalServiceTimeColMillis" : 1
+      }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 42,
+      "diskCountNormal" : 42
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 24,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 24,
+        "state" : "normal"
+      },
+      "nl" : {
+        "diskCount" : 12,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 12,
+        "state" : "normal"
+      },
+      "ssd" : {
+        "diskCount" : 6,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 6,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 3,
+    "cpuAvgMax" : 2,
+    "cpuMedianMax" : 2
+  },
+  "updated" : "2018-10-26T10:59:37Z",
+  "authorized" : {
+    "tenants" : [ "971724593", "hpe" ]
+  },
+  "date" : "2018-10-26T10:59:37Z"
+}

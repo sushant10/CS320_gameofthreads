@@ -1,0 +1,159 @@
+{
+  "serialNumberInserv" : "4504029",
+  "system" : {
+    "model" : "5200",
+    "fullModel" : "HP_3PAR 5200",
+    "osVersion" : "3.3.1.36 (DEVEL)",
+    "patches" : [ ],
+    "productFamily" : "5000",
+    "portsHWInfo" : [ {
+      "nsp" : "0:9:1",
+      "brand" : "Intel",
+      "model" : "igb",
+      "firmware" : "5.3.2.2",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:1",
+      "brand" : "LSI",
+      "model" : "9300-2x4DP",
+      "rev" : "02",
+      "firmware" : "7.00.00.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "10.6.248.3",
+      "serial" : "PEYWU0BLM9T00L"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "LSI",
+      "model" : "9300-2x4DP",
+      "rev" : "02",
+      "firmware" : "7.00.00.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "10.6.248.3",
+      "serial" : "PEYWU0BLM9T00L"
+    }, {
+      "nsp" : "0:2:2",
+      "brand" : "HP",
+      "model" : "560SFP+",
+      "firmware" : "3.15.1-k",
+      "serial" : "PEYWU0BLM9T00L"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "10.6.248.3",
+      "serial" : "PEYWU0BLM9T01L"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "LSI",
+      "model" : "9300-2x4DP",
+      "rev" : "02",
+      "firmware" : "7.00.00.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:1",
+      "brand" : "HP",
+      "model" : "560SFP+",
+      "firmware" : "3.15.1-k",
+      "serial" : "PEYWU0BLM9T01L"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "10.6.248.3",
+      "serial" : "PEYWU0BLM9T01L"
+    }, {
+      "nsp" : "1:9:1",
+      "brand" : "Intel",
+      "model" : "igb",
+      "firmware" : "5.3.2.2",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:2",
+      "brand" : "HP",
+      "model" : "560SFP+",
+      "firmware" : "3.15.1-k",
+      "serial" : "PEYWU0BLM9T01L"
+    }, {
+      "nsp" : "0:2:1",
+      "brand" : "HP",
+      "model" : "560SFP+",
+      "firmware" : "3.15.1-k",
+      "serial" : "PEYWU0BLM9T00L"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "LSI",
+      "model" : "9300-2x4DP",
+      "rev" : "02",
+      "firmware" : "7.00.00.00",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 0.078125,
+      "sizeTiB" : 2.125,
+      "freeTiB" : 1.3330078125,
+      "freePct" : 62.72978210449219,
+      "allocatedCapacityTiB" : 0.7919921875,
+      "failedCapacityTiB" : 0,
+      "systemAllocatedTiB" : 0.7919921875,
+      "volumesAllocatedTiB" : 0,
+      "otherAllocatedTiB" : 0,
+      "overprovisioningRatio" : 0.10000000149011612
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 2.125,
+        "freeTiB" : 1.3330078125,
+        "freePct" : 62.72978210449219,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "NoFlashArray"
+  },
+  "performance" : {
+    "summary" : {
+      "portInfo" : { }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 8,
+      "diskCountNormal" : 8
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 8,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 8,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 1,
+    "cageCount" : 1
+  },
+  "updated" : "2016-04-14T15:58:15Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2016-04-14T15:58:15Z"
+}

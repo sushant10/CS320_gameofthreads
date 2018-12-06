@@ -1,0 +1,225 @@
+{
+  "serialNumberInserv" : "8850302",
+  "system" : {
+    "companyName" : "Auntie Freeze",
+    "model" : "7200c",
+    "fullModel" : "HPE_3PAR 7200c",
+    "osVersion" : "3.3.1.410 (MU2)",
+    "patches" : [ ],
+    "sp" : {
+      "spId" : "26068",
+      "spModel" : "ProLiant DL320e Gen8",
+      "spVersion" : "5.0.3.0-24806"
+    },
+    "productSKU" : "E7X67A",
+    "productFamily" : "7000",
+    "recommended" : {
+      "criticalPatches" : [ "P38", "P30", "P32" ],
+      "conditionalPatches" : [ "P37" ]
+    },
+    "portsHWInfo" : [ {
+      "nsp" : "0:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 161.1337890625,
+      "sizeTiB" : 158.25,
+      "freeTiB" : 29.328125,
+      "freePct" : 18.532779693603516,
+      "freePctZeroPredictedDate" : "2019-02-15T11:20:11Z",
+      "allocatedCapacityTiB" : 128.88671875,
+      "failedCapacityTiB" : 0.03515625,
+      "systemAllocatedTiB" : 12.7685546875,
+      "volumesAllocatedTiB" : 116.1181640625,
+      "otherAllocatedTiB" : 0,
+      "volumesVirtualSizeTiB" : 161.1337890625,
+      "usedSpaceTiB" : 76.4234619140625,
+      "compactionRatio" : 1.8899999856948853,
+      "dedupeRatio" : 1.690000057220459,
+      "overprovisioningRatio" : 1.25
+    },
+    "byType" : {
+      "nl" : {
+        "sizeTiB" : 116.3671875,
+        "freeTiB" : 22.3486328125,
+        "freePct" : 19.205270767211914,
+        "freePctZeroPredictedDate" : "2019-02-15T11:20:11Z",
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "ssd" : {
+        "sizeTiB" : 41.8828125,
+        "freeTiB" : 6.9794921875,
+        "freePct" : 16.664335250854492,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100,
+        "lifeLeftPctMin" : 96
+      }
+    },
+    "arrayType" : "MixedArray"
+  },
+  "performance" : {
+    "portBandwidthData" : {
+      "total" : {
+        "dataRateKBPSAvg" : 96087,
+        "dataRateKBPSMax" : 126674,
+        "dataRateKBPSMin" : 26426,
+        "iopsAvg" : 3903,
+        "iopsMax" : 5654,
+        "iopsMin" : 1443,
+        "ioSizeAvg" : 24.600000381469727,
+        "ioSizeMax" : 32,
+        "ioSizeMin" : 18,
+        "queueLengthAvg" : 1,
+        "queueLengthMax" : 3,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0.6000000238418579,
+        "serviceTimeMSMax" : 1,
+        "serviceTimeMSMin" : 0
+      },
+      "read" : {
+        "dataRateKBPSAvg" : 56053,
+        "dataRateKBPSMax" : 77004,
+        "dataRateKBPSMin" : 2854,
+        "iopsAvg" : 1295,
+        "iopsMax" : 2011,
+        "iopsMin" : 240,
+        "ioSizeAvg" : 41.799922943115234,
+        "ioSizeMax" : 75,
+        "ioSizeMin" : 12,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 1.100000023841858,
+        "serviceTimeMSMax" : 2,
+        "serviceTimeMSMin" : 0
+      },
+      "write" : {
+        "dataRateKBPSAvg" : 40035,
+        "dataRateKBPSMax" : 49671,
+        "dataRateKBPSMin" : 23572,
+        "iopsAvg" : 2608,
+        "iopsMax" : 3641,
+        "iopsMin" : 1204,
+        "ioSizeAvg" : 16.450115203857422,
+        "ioSizeMax" : 20,
+        "ioSizeMin" : 12,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0.4000000059604645,
+        "serviceTimeMSMax" : 1,
+        "serviceTimeMSMin" : 0
+      }
+    },
+    "summary" : {
+      "portInfo" : {
+        "readServiceTimeColMillis" : 1.100000023841858,
+        "writeServiceTimeColMillis" : 0.4000000059604645,
+        "totalServiceTimeColMillis" : 0.6000000238418579
+      }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 60,
+      "diskCountNormal" : 60
+    },
+    "byType" : {
+      "nl" : {
+        "diskCount" : 36,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 36,
+        "state" : "normal"
+      },
+      "ssd" : {
+        "diskCount" : 24,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 24,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 3,
+    "cpuAvgMax" : 17,
+    "cpuMedianMax" : 19
+  },
+  "updated" : "2018-10-26T11:20:05Z",
+  "authorized" : {
+    "tenants" : [ "1565343890", "hpe", "1533820006", "893728465" ]
+  },
+  "date" : "2018-10-26T11:20:05Z"
+}

@@ -1,0 +1,235 @@
+{
+  "serialNumberInserv" : "2902265",
+  "system" : {
+    "companyName" : "Ulik",
+    "model" : "7440c",
+    "fullModel" : "HPE_3PAR 7440c",
+    "osVersion" : "3.3.1.410 (MU2)",
+    "patches" : [ "P30" ],
+    "sp" : {
+      "spId" : "4173913",
+      "spModel" : "VMware Virtual Platform",
+      "spVersion" : "5.0.3.0-24734"
+    },
+    "productSKU" : "E7X80A",
+    "productFamily" : "7000",
+    "recommended" : {
+      "conditionalPatches" : [ "P32" ]
+    },
+    "portsHWInfo" : [ {
+      "nsp" : "0:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0AHG7ZA4X"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0AST7UPTU"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "EMULEX",
+      "model" : "LPe12002",
+      "rev" : "03",
+      "firmware" : "2.10.X.3",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0AST7UPTU"
+    }, {
+      "nsp" : "0:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QLE8242",
+      "rev" : "58",
+      "firmware" : "4.15.27",
+      "serial" : "PCGLT0AHG7ZA4X"
+    }, {
+      "nsp" : "1:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 20.283203125,
+      "sizeTiB" : 38.390625,
+      "freeTiB" : 20.9716796875,
+      "freePct" : 54.62708282470703,
+      "allocatedCapacityTiB" : 17.4189453125,
+      "failedCapacityTiB" : 0,
+      "systemAllocatedTiB" : 2.0439453125,
+      "volumesAllocatedTiB" : 15.375,
+      "otherAllocatedTiB" : 0,
+      "volumesVirtualSizeTiB" : 20.673828125,
+      "usedSpaceTiB" : 10.5416259765625,
+      "compactionRatio" : 1.940000057220459,
+      "overprovisioningRatio" : 0.6700000166893005
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 38.390625,
+        "freeTiB" : 20.9716796875,
+        "freePct" : 54.62708282470703,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "NoFlashArray"
+  },
+  "performance" : {
+    "portBandwidthData" : {
+      "total" : {
+        "dataRateKBPSAvg" : 2470,
+        "dataRateKBPSMax" : 7107,
+        "dataRateKBPSMin" : 146,
+        "iopsAvg" : 35,
+        "iopsMax" : 78,
+        "iopsMin" : 14,
+        "ioSizeAvg" : 34.720001220703125,
+        "ioSizeMax" : 91,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0.3100000023841858,
+        "serviceTimeMSMax" : 1,
+        "serviceTimeMSMin" : 0
+      },
+      "read" : {
+        "dataRateKBPSAvg" : 438,
+        "dataRateKBPSMax" : 1311,
+        "dataRateKBPSMin" : 1,
+        "iopsAvg" : 2,
+        "iopsMax" : 6,
+        "iopsMin" : 0,
+        "ioSizeAvg" : 30.799999237060547,
+        "ioSizeMax" : 223,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0.800000011920929,
+        "serviceTimeMSMax" : 6,
+        "serviceTimeMSMin" : 0
+      },
+      "write" : {
+        "dataRateKBPSAvg" : 2033,
+        "dataRateKBPSMax" : 5796,
+        "dataRateKBPSMin" : 145,
+        "iopsAvg" : 33,
+        "iopsMax" : 72,
+        "iopsMin" : 13,
+        "ioSizeAvg" : 31.469999313354492,
+        "ioSizeMax" : 81,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0.3100000023841858,
+        "serviceTimeMSMax" : 1,
+        "serviceTimeMSMin" : 0
+      }
+    },
+    "summary" : {
+      "portInfo" : {
+        "readServiceTimeColMillis" : 0.800000011920929,
+        "writeServiceTimeColMillis" : 0.3100000023841858,
+        "totalServiceTimeColMillis" : 0.3100000023841858
+      }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 48,
+      "diskCountNormal" : 48
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 48,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 48,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 2,
+    "cpuAvgMax" : 8,
+    "cpuMedianMax" : 8
+  },
+  "updated" : "2018-09-09T11:40:02Z",
+  "authorized" : {
+    "tenants" : [ "440376284", "hpe", "1533820006", "893728465" ]
+  },
+  "date" : "2018-09-09T11:40:02Z"
+}

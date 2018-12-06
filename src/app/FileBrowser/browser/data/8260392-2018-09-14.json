@@ -1,0 +1,120 @@
+{
+  "serialNumberInserv" : "8260392",
+  "system" : {
+    "companyName" : "Isis",
+    "model" : "V400",
+    "fullModel" : "InServ V400",
+    "osVersion" : "3.3.1.418 (MU3)",
+    "patches" : [ "P63", "P67" ],
+    "sp" : {
+      "spId" : "239393",
+      "spModel" : "VMware Virtual Platform",
+      "spVersion" : "5.0.5.0-25573"
+    },
+    "productSKU" : "",
+    "productFamily" : "10000",
+    "portsHWInfo" : [ {
+      "nsp" : "0:9:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "SP24816173"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "SP24816173"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "SP24816180"
+    }, {
+      "nsp" : "1:9:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "LSI",
+      "model" : "9205-8e",
+      "rev" : "01",
+      "firmware" : "17.11.03.00",
+      "serial" : "SP24816180"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 0.09765625,
+      "sizeTiB" : 12.796875,
+      "freeTiB" : 10.8017578125,
+      "freePct" : 84.40933990478516,
+      "allocatedCapacityTiB" : 0.9287109375,
+      "failedCapacityTiB" : 1.06640625,
+      "systemAllocatedTiB" : 0.9482421875,
+      "volumesAllocatedTiB" : 0,
+      "otherAllocatedTiB" : 0,
+      "overprovisioningRatio" : 0.019999999552965164
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 12.796875,
+        "freeTiB" : 10.8017578125,
+        "freePct" : 84.40933990478516,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "NoFlashArray"
+  },
+  "performance" : {
+    "portBandwidthData" : { },
+    "summary" : {
+      "portInfo" : { }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 24,
+      "diskCountNormal" : 22,
+      "diskCountFailed" : 2
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 24,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 22,
+        "diskCountFailed" : 2,
+        "state" : "failed"
+      }
+    },
+    "state" : "failed"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 4,
+    "cpuAvgMax" : 1,
+    "cpuMedianMax" : 1,
+    "batteryExpiry" : "2018-10-15T00:00:00Z"
+  },
+  "updated" : "2018-09-14T21:26:32Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2018-09-14T21:26:32Z"
+}

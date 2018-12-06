@@ -1,0 +1,264 @@
+{
+  "serialNumberInserv" : "2798107",
+  "system" : {
+    "companyName" : "Balder",
+    "model" : "8400",
+    "fullModel" : "HPE_3PAR 8400",
+    "osVersion" : "3.3.1.410 (MU2)",
+    "patches" : [ "P30", "P32", "P38" ],
+    "sp" : {
+      "spId" : "4048220",
+      "spModel" : "VMware Virtual Platform",
+      "spVersion" : "5.0.3.1-25112",
+      "spPatches" : [ "1" ]
+    },
+    "productSKU" : "H6Y95A",
+    "productFamily" : "8000",
+    "recommended" : {
+      "conditionalPatches" : [ "P37" ]
+    },
+    "portsHWInfo" : [ {
+      "nsp" : "0:0:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QTH8362",
+      "rev" : "02",
+      "firmware" : "5.7.35",
+      "serial" : "PEJXF0AST9I7TJ"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QTH8362",
+      "rev" : "02",
+      "firmware" : "5.7.35",
+      "serial" : "PEJXF0AST9IWYT"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QTH8362",
+      "rev" : "02",
+      "firmware" : "5.7.35",
+      "serial" : "PEJXF0AST9IWYT"
+    }, {
+      "nsp" : "0:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QTH8362",
+      "rev" : "02",
+      "firmware" : "5.7.35",
+      "serial" : "PEJXF0AST9I7TJ"
+    }, {
+      "nsp" : "1:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 396.015625,
+      "sizeTiB" : 480.666015625,
+      "freeTiB" : 120.8701171875,
+      "freePct" : 25.14638328552246,
+      "freePctZeroPredictedDate" : "2019-07-14T23:26:58Z",
+      "allocatedCapacityTiB" : 356.5400390625,
+      "failedCapacityTiB" : 0.0029296875,
+      "systemAllocatedTiB" : 20.59375,
+      "volumesAllocatedTiB" : 339.0703125,
+      "otherAllocatedTiB" : 0.12890625,
+      "volumesVirtualSizeTiB" : 416.9921875,
+      "usedSpaceTiB" : 225.622314453125,
+      "compactionRatio" : 1.7599999904632568,
+      "overprovisioningRatio" : 1.1799999475479126
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 156.9375,
+        "freeTiB" : 59.982421875,
+        "freePct" : 38.220577239990234,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "nl" : {
+        "sizeTiB" : 309.767578125,
+        "freeTiB" : 56.8310546875,
+        "freePct" : 18.34635353088379,
+        "freePctZeroPredictedDate" : "2019-04-14T23:26:58Z",
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "ssd" : {
+        "sizeTiB" : 13.9609375,
+        "freeTiB" : 4.185546875,
+        "freePct" : 29.98041534423828,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "MixedArray"
+  },
+  "performance" : {
+    "portBandwidthData" : {
+      "total" : {
+        "dataRateKBPSAvg" : 65522,
+        "dataRateKBPSMax" : 132554,
+        "dataRateKBPSMin" : 37390,
+        "iopsAvg" : 1210,
+        "iopsMax" : 2489,
+        "iopsMin" : 672,
+        "ioSizeAvg" : 55.32363510131836,
+        "ioSizeMax" : 68,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 3,
+        "queueLengthMax" : 54.5,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 4.074214935302734,
+        "serviceTimeMSMax" : 7,
+        "serviceTimeMSMin" : 0
+      },
+      "read" : {
+        "dataRateKBPSAvg" : 54871,
+        "dataRateKBPSMax" : 116452,
+        "dataRateKBPSMin" : 30160,
+        "iopsAvg" : 1006,
+        "iopsMax" : 2204,
+        "iopsMin" : 461,
+        "ioSizeAvg" : 56.40089416503906,
+        "ioSizeMax" : 68,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 3.286163091659546,
+        "serviceTimeMSMax" : 5,
+        "serviceTimeMSMin" : 0
+      },
+      "write" : {
+        "dataRateKBPSAvg" : 10652,
+        "dataRateKBPSMax" : 16103,
+        "dataRateKBPSMin" : 5466,
+        "iopsAvg" : 206,
+        "iopsMax" : 286,
+        "iopsMin" : 156,
+        "ioSizeAvg" : 49.00563049316406,
+        "ioSizeMax" : 69,
+        "ioSizeMin" : 0,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 6.693932056427002,
+        "serviceTimeMSMax" : 9,
+        "serviceTimeMSMin" : 0
+      }
+    },
+    "summary" : {
+      "portInfo" : {
+        "readServiceTimeColMillis" : 3.286163091659546,
+        "writeServiceTimeColMillis" : 6.693932056427002,
+        "totalServiceTimeColMillis" : 4.074214935302734
+      }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 210,
+      "diskCountNormal" : 210
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 144,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 144,
+        "state" : "normal"
+      },
+      "nl" : {
+        "diskCount" : 58,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 58,
+        "state" : "normal"
+      },
+      "ssd" : {
+        "diskCount" : 8,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 8,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 11,
+    "cpuAvgMax" : 3,
+    "cpuMedianMax" : 3
+  },
+  "updated" : "2018-10-26T11:09:17Z",
+  "authorized" : {
+    "tenants" : [ "637585054", "hpe" ]
+  },
+  "date" : "2018-10-26T11:09:17Z"
+}

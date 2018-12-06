@@ -1,0 +1,226 @@
+{
+  "serialNumberInserv" : "3198877",
+  "system" : {
+    "companyName" : "Dragon Lord",
+    "model" : "8200",
+    "fullModel" : "HPE_3PAR 8200",
+    "osVersion" : "3.3.1.410 (MU2)",
+    "patches" : [ ],
+    "sp" : {
+      "spId" : "7015052",
+      "spModel" : "Virtual Machine",
+      "spVersion" : "5.0.3.1-25112",
+      "spPatches" : [ "1" ]
+    },
+    "productSKU" : "K2Q36A",
+    "productFamily" : "8000",
+    "recommended" : {
+      "criticalPatches" : [ "P30" ],
+      "conditionalPatches" : [ "P32" ]
+    },
+    "portsHWInfo" : [ {
+      "nsp" : "0:0:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "LSI",
+      "model" : "9300-2P",
+      "rev" : "02",
+      "firmware" : "10.10.01.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "EMULEX",
+      "model" : "LPE16002",
+      "rev" : "30",
+      "firmware" : "11.1.220.10",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:3:1",
+      "brand" : "Intel",
+      "model" : "e1000e",
+      "firmware" : "3.2.6-k",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 5.0146484375,
+      "sizeTiB" : 55.37890625,
+      "freeTiB" : 29.1728515625,
+      "freePct" : 52.67863464355469,
+      "freePctZeroPredictedDate" : "2019-05-15T03:37:27Z",
+      "allocatedCapacityTiB" : 26.205078125,
+      "failedCapacityTiB" : 0.0009765625,
+      "systemAllocatedTiB" : 4.896484375,
+      "volumesAllocatedTiB" : 21.30859375,
+      "otherAllocatedTiB" : 0,
+      "volumesVirtualSizeTiB" : 5.0146484375,
+      "usedSpaceTiB" : 13.9976806640625,
+      "compactionRatio" : 1.5800000429153442,
+      "overprovisioningRatio" : 0.6700000166893005
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 50.15234375,
+        "freeTiB" : 28.232421875,
+        "freePct" : 56.29332733154297,
+        "freePctZeroPredictedDate" : "2019-05-15T03:37:27Z",
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "ssd" : {
+        "sizeTiB" : 5.2265625,
+        "freeTiB" : 0.9404296875,
+        "freePct" : 17.99327278137207,
+        "freePctZeroPredictedDate" : "2018-12-15T03:37:27Z",
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100,
+        "lifeLeftPctMin" : 100
+      }
+    },
+    "arrayType" : "MixedArray"
+  },
+  "performance" : {
+    "portBandwidthData" : {
+      "total" : {
+        "dataRateKBPSAvg" : 42273,
+        "dataRateKBPSMax" : 96254,
+        "dataRateKBPSMin" : 16710,
+        "iopsAvg" : 1501,
+        "iopsMax" : 2885,
+        "iopsMin" : 988,
+        "ioSizeAvg" : 35.49304962158203,
+        "ioSizeMax" : 96,
+        "ioSizeMin" : 6,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 1,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0.9442971348762512,
+        "serviceTimeMSMax" : 3,
+        "serviceTimeMSMin" : 0
+      },
+      "read" : {
+        "dataRateKBPSAvg" : 19608,
+        "dataRateKBPSMax" : 55583,
+        "dataRateKBPSMin" : 630,
+        "iopsAvg" : 406,
+        "iopsMax" : 1805,
+        "iopsMin" : 20,
+        "ioSizeAvg" : 155.97763061523438,
+        "ioSizeMax" : 367,
+        "ioSizeMin" : 5,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 2.7193102836608887,
+        "serviceTimeMSMax" : 6,
+        "serviceTimeMSMin" : 1
+      },
+      "write" : {
+        "dataRateKBPSAvg" : 22664,
+        "dataRateKBPSMax" : 58780,
+        "dataRateKBPSMin" : 11205,
+        "iopsAvg" : 1096,
+        "iopsMax" : 1326,
+        "iopsMin" : 899,
+        "ioSizeAvg" : 18.799196243286133,
+        "ioSizeMax" : 97,
+        "ioSizeMin" : 11,
+        "queueLengthAvg" : 0,
+        "queueLengthMax" : 0,
+        "queueLengthMin" : 0,
+        "serviceTimeMSAvg" : 0.712427020072937,
+        "serviceTimeMSMax" : 3,
+        "serviceTimeMSMin" : 0
+      }
+    },
+    "summary" : {
+      "portInfo" : {
+        "readServiceTimeColMillis" : 2.7193102836608887,
+        "writeServiceTimeColMillis" : 0.712427020072937,
+        "totalServiceTimeColMillis" : 0.9442971348762512
+      }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 48,
+      "diskCountNormal" : 48
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 36,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 36,
+        "state" : "normal"
+      },
+      "ssd" : {
+        "diskCount" : 12,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 12,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 2,
+    "cpuAvgMax" : 2,
+    "cpuMedianMax" : 2
+  },
+  "updated" : "2018-09-09T18:17:33Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2018-09-09T18:17:33Z"
+}

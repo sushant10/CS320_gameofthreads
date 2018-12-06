@@ -1,0 +1,163 @@
+{
+  "serialNumberInserv" : "4699630",
+  "system" : {
+    "model" : "5240",
+    "fullModel" : "HP_3PAR 5240",
+    "osVersion" : "3.3.1.16 (DEVEL)",
+    "patches" : [ ],
+    "sp" : {
+      "spId" : "6935971",
+      "spModel" : "ABM",
+      "spVersion" : "5.0.0.0-20601-AB (5.0 GA ** NON-Production build **)"
+    },
+    "productSKU" : "",
+    "productFamily" : "5000",
+    "portsHWInfo" : [ {
+      "nsp" : "0:9:1",
+      "brand" : "Intel",
+      "model" : "igb",
+      "firmware" : "5.3.2.2",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:1",
+      "brand" : "LSI",
+      "model" : "9300-1x8DP",
+      "rev" : "02",
+      "firmware" : "7.00.00.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5"
+    }, {
+      "nsp" : "0:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5",
+      "serial" : "PETJHX3LM8H05Q"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "LSI",
+      "model" : "9300-1x8DP",
+      "rev" : "02",
+      "firmware" : "7.00.00.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5",
+      "serial" : "PETJHX3LM8H0DZ"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5"
+    }, {
+      "nsp" : "1:9:1",
+      "brand" : "Intel",
+      "model" : "igb",
+      "firmware" : "5.3.2.2",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5",
+      "serial" : "PETJHX3LM8H0DZ"
+    }, {
+      "nsp" : "0:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5",
+      "serial" : "PETJHX3LM8H05Q"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 0.09765625,
+      "sizeTiB" : 51.87890625,
+      "freeTiB" : 44.4873046875,
+      "freePct" : 85.752197265625,
+      "allocatedCapacityTiB" : 7.3916015625,
+      "failedCapacityTiB" : 0,
+      "systemAllocatedTiB" : 7.3525390625,
+      "volumesAllocatedTiB" : 0.0390625,
+      "otherAllocatedTiB" : 0
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 9.5625,
+        "freeTiB" : 8.6923828125,
+        "freePct" : 90.9007339477539,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      },
+      "nl" : {
+        "sizeTiB" : 42.31640625,
+        "freeTiB" : 35.794921875,
+        "freePct" : 84.58875274658203,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "NoFlashArray"
+  },
+  "performance" : {
+    "summary" : {
+      "portInfo" : { }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 48,
+      "diskCountNormal" : 48
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 36,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 36,
+        "state" : "normal"
+      },
+      "nl" : {
+        "diskCount" : 12,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 12,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 0,
+    "cageCount" : 10
+  },
+  "updated" : "2016-03-15T15:35:59Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2016-03-15T15:35:59Z"
+}

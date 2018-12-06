@@ -1,0 +1,169 @@
+{
+  "serialNumberInserv" : "3629969",
+  "system" : {
+    "model" : "5200",
+    "fullModel" : "HP_3PAR 5200",
+    "osVersion" : "3.2.3.164-20160211.145127 (DEVEL)",
+    "patches" : [ ],
+    "sp" : {
+      "spId" : "8332732",
+      "spModel" : "ABM",
+      "spVersion" : "5.0.0.0-20469-AB (5.0 GA ** NON-Production build **)"
+    },
+    "productSKU" : "",
+    "productFamily" : "5000",
+    "portsHWInfo" : [ {
+      "nsp" : "0:9:1",
+      "brand" : "Intel",
+      "model" : "igb",
+      "firmware" : "5.3.2.2",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:0:1",
+      "brand" : "LSI",
+      "model" : "9300-2x4DP",
+      "rev" : "02",
+      "firmware" : "7.00.00.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:1",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5",
+      "serial" : "PETJHX3LM8H08D"
+    }, {
+      "nsp" : "0:0:2",
+      "brand" : "LSI",
+      "model" : "9300-2x4DP",
+      "rev" : "02",
+      "firmware" : "7.00.00.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "0:1:2",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5",
+      "serial" : "PETJHX3LM8H08D"
+    }, {
+      "nsp" : "0:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5",
+      "serial" : "PETJHX3LM8H08D"
+    }, {
+      "nsp" : "1:1:1",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5",
+      "serial" : "PETJHX3LM8H03D"
+    }, {
+      "nsp" : "1:0:1",
+      "brand" : "LSI",
+      "model" : "9300-2x4DP",
+      "rev" : "02",
+      "firmware" : "7.00.00.00",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5",
+      "serial" : "PETJHX3LM8H03D"
+    }, {
+      "nsp" : "1:1:2",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5",
+      "serial" : "PETJHX3LM8H03D"
+    }, {
+      "nsp" : "1:9:1",
+      "brand" : "Intel",
+      "model" : "igb",
+      "firmware" : "5.3.2.2",
+      "serial" : "Onboard"
+    }, {
+      "nsp" : "1:2:2",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5",
+      "serial" : "PETJHX3LM8H03D"
+    }, {
+      "nsp" : "0:2:1",
+      "brand" : "QLOGIC",
+      "model" : "QTH2672",
+      "rev" : "02",
+      "firmware" : "8.1.5",
+      "serial" : "PETJHX3LM8H08D"
+    }, {
+      "nsp" : "1:0:2",
+      "brand" : "LSI",
+      "model" : "9300-2x4DP",
+      "rev" : "02",
+      "firmware" : "7.00.00.00",
+      "serial" : "Onboard"
+    } ]
+  },
+  "capacity" : {
+    "total" : {
+      "virtualSizeTiB" : 0.078125,
+      "sizeTiB" : 2.125,
+      "freeTiB" : 1.3330078125,
+      "freePct" : 62.72978210449219,
+      "allocatedCapacityTiB" : 0.7919921875,
+      "failedCapacityTiB" : 0,
+      "systemAllocatedTiB" : 0.7919921875,
+      "volumesAllocatedTiB" : 0,
+      "otherAllocatedTiB" : 0,
+      "overprovisioningRatio" : 0.10000000149011612
+    },
+    "byType" : {
+      "fc" : {
+        "sizeTiB" : 2.125,
+        "freeTiB" : 1.3330078125,
+        "freePct" : 62.72978210449219,
+        "usedBalancedPct" : 100,
+        "sizeBalancedPct" : 100
+      }
+    },
+    "arrayType" : "NoFlashArray"
+  },
+  "performance" : {
+    "summary" : {
+      "portInfo" : { }
+    }
+  },
+  "disks" : {
+    "total" : {
+      "diskCount" : 8,
+      "diskCountNormal" : 8
+    },
+    "byType" : {
+      "fc" : {
+        "diskCount" : 8,
+        "diskCountBalancedPct" : 100,
+        "diskCountNormal" : 8,
+        "state" : "normal"
+      }
+    },
+    "state" : "normal"
+  },
+  "nodes" : {
+    "nodeCount" : 2,
+    "nodeCountOffline" : 0,
+    "nodeCountMissing" : 0,
+    "nodeTimeSkewSecs" : 21,
+    "cageCount" : 1
+  },
+  "updated" : "2016-05-25T00:12:38Z",
+  "authorized" : {
+    "tenants" : [ "hpe" ]
+  },
+  "date" : "2016-05-25T00:12:38Z"
+}
