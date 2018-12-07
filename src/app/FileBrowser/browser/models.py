@@ -11,7 +11,7 @@ class System(models.Model):
     name = models.CharField(max_length=45)
     tenants = ArrayField(models.CharField(max_length = 200), blank = True, null = True)
     recentDate = models.DateField()
-    capacity = models.FloatField()
+    capacity = models.FloatField(blank = True, null = True)
     def __str__(self):
         return self.serialNumberInserv
 
