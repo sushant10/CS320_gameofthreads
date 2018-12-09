@@ -65,6 +65,19 @@ $ python3 manage.py importJson [app] [TargetFolder]
 $ python3 manage.py add_User [tenant name] [password] admin  
 ```
 
+### Contributers/Team
+- [Ian Birle](https://github.com/ibirle)
+- [Joseph Blake](https://github.com/josephblake8424)
+- [Kyle Cote](https://github.com/kzcote)
+- [Daniel Ginzberg](https://github.com/ginzbeda)
+- [Qian Wen Hu](https://github.com/qianwenhu)
+- [Robert Kilgore](https://github.com/Rob-Kilgore)
+- [Nathaniel Lombardi](https://github.com/nzlombardi)
+- [Daniel Maryanski](https://github.com/danielmaryanski)
+- [Sushant Rao](https://github.com/sushant10/)
+- [Huiyuan Wu](https://github.com/huiyuanWu) <br>
+
+**_Managed By:_** [Yueying Liu](https://github.com/linglonglinglong)
 
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. )
