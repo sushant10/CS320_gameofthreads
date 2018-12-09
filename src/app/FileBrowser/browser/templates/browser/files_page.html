@@ -41,7 +41,7 @@
 						<tr>
 							<td>{{file.FileID}}</td>
 							<td>{{file.dataDate}}</td>
-							<td>{{file.capacity}}</td>
+							<td>{{file.capacity}}%</td>
 							<td> <a href="{%url 'browser:download' file.FileID %}" download> Download </a> </td>
 						</tr>
 					{% endfor %}

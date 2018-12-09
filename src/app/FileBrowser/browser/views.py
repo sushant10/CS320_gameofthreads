@@ -14,6 +14,7 @@ from django.utils.encoding import smart_str
 import os
 from sys import platform
 from django_datatables_view.base_datatable_view import BaseDatatableView
+from django.db.models import Q
 
 # Create your views here.
 """
@@ -28,7 +29,7 @@ class dtSystems(BaseDatatableView):
     def filter_queryset(self, qs):
         search = self.request.GET.get('search[value]', None)
         if search:
-            qs = qs.filter(name__istartswith=search)
+            qs = qs.filter(Q(name__istartswith=search) | Q(serialNumberInserv__istartswith=search))
         username = str(self.request.session['username'])
         return qs.filter(tenants__contains = [username])
 

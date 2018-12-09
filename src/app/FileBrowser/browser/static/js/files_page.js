@@ -10,6 +10,7 @@ $(document).ready(function(){
 		columns: [
 			{"type": "html"},
 			{"type": "date"},
+			{"type": "html", "searchable": false},
 			{"type": "html", "searchable": false}
 		]
 	});
