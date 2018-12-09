@@ -16,11 +16,12 @@ $(document).ready(function(){
 		},
 		{},
 		{
+			/*
 			"mRender": function (data, type, row){	
 				var date = new Date(row[2]);
 				var months = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."];
 				return months[date.getMonth()] + " " + (1 + date.getDate()) + ", " + date.getFullYear();
-			}
+			}*/
 		},
 		{
 			"mRender": function (data, type, row){

@@ -40,7 +40,7 @@
 					{% for file in file_list %}
 						<tr>
 							<td>{{file.FileID}}</td>
-							<td>{{file.dataDate}}</td>
+							<td>{{file.dataDate|date:"Y-m-d"}}</td>
 							<td>{{file.capacity}}%</td>
 							<td> <a href="{%url 'browser:download' file.FileID %}" download> Download </a> </td>
 						</tr>
