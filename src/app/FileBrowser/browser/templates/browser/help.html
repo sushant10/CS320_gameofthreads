@@ -10,17 +10,13 @@
 <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/help.js' %}"></script>
 
-<!-- Help Header -->
-<!-- 
-<h1>FileSublime<span class="badge badge-secondary"></span></h1>			ODD
--->
-<h1><font color="34305E">FileSublime</font><span class="badge badge-secondary"></span></h1>	
+<h1>FileSublime<span class="badge badge-secondary"></span></h1>
 
 <div id="help-container" class="center-section">
 	<ul class="nav nav-tabs">
-		<li class="nav-item active"><a class="nav-link" href="#welcome"><font color="17202A"><b>Welcome</b></font></a></li>
-		<li class="nav-item"><a class="nav-link" href="#tutorial"><font color="17202A"><b>Tutorial</b></font></a></li>
-		<li class="nav-item"><a class="nav-link" href="#changelog"><font color="17202A"><b>Changelog</b></font></a></li>
+		<li class="nav-item active"><a class="nav-link" href="#welcome">Welcome</a></li>
+		<li class="nav-item"><a class="nav-link" href="#tutorial">Tutorial</a></li>
+		<li class="nav-item"><a class="nav-link" href="#changelog">Changelog</a></li>
 	</ul>
 
 	<div class="tab-content">
@@ -67,13 +63,43 @@
 				the table. Once you find the file you want to download, you can click “Download” 
 				on that file’s table row.
 			</p>
-			<h4>Sign Up</h4>
-			<p>
-				To obtain login credentials, please contact an authorized HPE person.
-			</p>
 		</div>
 		<div id="changelog" class="tab-pane fade help-section">
-			<h4 class="version">Version 0.5 (11-8-2018)</h4>
+			<h4 class="version">Version 0.8 (12-09-2018)</h4>
+			<h5>Added</h5>
+				<ul>
+					<li>Server side processing to drastically increase the time to load the tables no matter how much data is on the database</li>
+					<li>Gradient coloring to visually show how much free capacity is left when under 30% left</li>
+					<li>User will now be logged out upon closing the tab with FileSublime open</li>
+				</ul>
+			<h5>Changed</h5>
+				<ul>
+					<li>HTML file for each system so that we no longer show the number of files and instead show the most recent file date and the free capacity left on the system</li>
+					<li>ImportJson now adds the most recent date and capacity to the system objects</li>
+				</ul>
+			<hr>
+			<h4 class="version">Version 0.7 (12-03-2018)</h4>
+			<h5>Added</h5>
+				<ul>
+					<li>Login page UI</li>
+				</ul>
+			<h5>Changed</h5>
+				<ul>
+					<li>Models.py file to store the capacity for each file on our database</li>
+					<li>Help page to give more information to the user</li>
+					<li>HTML file for each file so that a fourth column displays the free capacity</li>
+					<li>ImportJson.py now adds the capacity info to the file objects in the database</li>
+				</ul>
+			<hr>
+			<h4 class="version">Version 0.6 (11-27-2018)</h4>
+			<h5>Added</h5>
+				<ul>
+					<li>Script to create users to access the database</li>
+					<li>Login authentication to work with created users</li>
+					<li>Tenant authorization so that a user can only access their own systems</li>
+				</ul>
+			<hr>
+			<h4 class="version">Version 0.5 (11-08-2018)</h4>
 			<h5>Added</h5>
 				<ul>
 					<li>Functionality to the navigation bar, the buttons can now be pressed and 
