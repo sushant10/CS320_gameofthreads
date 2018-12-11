@@ -14,6 +14,7 @@ from django.utils.encoding import smart_str
 import os
 from sys import platform
 from django_datatables_view.base_datatable_view import BaseDatatableView
+from django.views.decorators.cache import never_cache
 from django.db.models import Q
 
 # Create your views here.
@@ -33,6 +34,7 @@ class dtSystems(BaseDatatableView):
         username = str(self.request.session['username'])
         return qs.filter(tenants__contains = [username])
 
+@never_cache
 def systems(request):
     if not request.session.has_key('username'):
         return redirect("browser:login")
@@ -41,7 +43,7 @@ def systems(request):
 
     return render(request, 'browser/systems_page.html', {'system_list' : system_list})
 
-
+@never_cache
 def files(request, serialNumberInserv):
     if not request.session.has_key('username'):
         return redirect("browser:login")
@@ -50,6 +52,7 @@ def files(request, serialNumberInserv):
     return render(request, 'browser/files_page.html', {'file_list':files, 'companyID':serialNumberInserv, 
         'companyName':system.name})
 
+@never_cache
 def download(request, fileID):
     if not request.session.has_key('username'):
         return redirect("browser:login")
@@ -73,11 +76,13 @@ def download(request, fileID):
     else:
         return redirect("browser:login")
 
+@never_cache
 def help(request):
     if not request.session.has_key('username'):
         return redirect("browser:login")
     return render(request, 'browser/help.html', {})
 
+@never_cache
 def loginView(request):
     errors = []
     try:
@@ -103,6 +108,7 @@ def loginView(request):
 
     return render(request, 'browser/login.html', {'error' : errors})
 
+@never_cache
 def logoutView(request):
     try:
       del request.session['username']
@@ -110,5 +116,6 @@ def logoutView(request):
       pass
     return redirect("browser:login")
 
+@never_cache
 def default(request):
     return redirect("browser:systems")
