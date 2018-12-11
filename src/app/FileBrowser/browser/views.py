@@ -47,10 +47,16 @@ def systems(request):
 def files(request, serialNumberInserv):
     if not request.session.has_key('username'):
         return redirect("browser:login")
-    files = get_list_or_404(File, SystemID = serialNumberInserv)
     system = get_object_or_404(System, serialNumberInserv=serialNumberInserv)
-    return render(request, 'browser/files_page.html', {'file_list':files, 'companyID':serialNumberInserv, 
-        'companyName':system.name})
+    tenants = system.tenants
+    username = str(request.session['username'])
+    if username in tenants:
+        files = get_list_or_404(File, SystemID = serialNumberInserv)
+        system = get_object_or_404(System, serialNumberInserv=serialNumberInserv)
+        return render(request, 'browser/files_page.html', {'file_list':files, 'companyID':serialNumberInserv, 
+            'companyName':system.name})
+    else:
+        return redirect("browser:systems")
 
 @never_cache
 def download(request, fileID):
