@@ -16,7 +16,6 @@
 	<ul class="nav nav-tabs">
 		<li class="nav-item active"><a class="nav-link" href="#welcome">Welcome</a></li>
 		<li class="nav-item"><a class="nav-link" href="#tutorial">Tutorial</a></li>
-		<li class="nav-item"><a class="nav-link" href="#changelog">Changelog</a></li>
 	</ul>
 
 	<div class="tab-content">
@@ -31,9 +30,6 @@
 			<p>
 				FileSublime is used to filter through specific Json files which contain certain
 				identifying information, such as system and date.
-			</p>
-			<p>
-				<a href="https://github.com/sushant10/CS320_gameofthreads/wiki">View Project Wiki</a>
 			</p>
 		</div>
 		<div id="tutorial" class="tab-pane fade help-section">
@@ -51,7 +47,7 @@
 				associated company name and the number of files associated with that system. You 
 				can use the search bar in the upper right to filter systems and find the one you 
 				are looking for. To view the files for a system, click on the respective system’s
-				system ID. This will bring you to the system’s file page.
+				system ID. This will bring you to the system’s file page. 
 			</p>
 			<h4>Files Page</h4>
 			<p>
@@ -63,105 +59,14 @@
 				the table. Once you find the file you want to download, you can click “Download” 
 				on that file’s table row.
 			</p>
-		</div>
-		<div id="changelog" class="tab-pane fade help-section">
-			<h4 class="version">Version 0.8 (12-09-2018)</h4>
-			<h5>Added</h5>
-				<ul>
-					<li>Server side processing to drastically increase the time to load the tables no matter how much data is on the database</li>
-					<li>Gradient coloring to visually show how much free capacity is left when under 30% left</li>
-					<li>User will now be logged out upon closing the tab with FileSublime open</li>
-				</ul>
-			<h5>Changed</h5>
-				<ul>
-					<li>HTML file for each system so that we no longer show the number of files and instead show the most recent file date and the free capacity left on the system</li>
-					<li>ImportJson now adds the most recent date and capacity to the system objects</li>
-				</ul>
-			<hr>
-			<h4 class="version">Version 0.7 (12-03-2018)</h4>
-			<h5>Added</h5>
-				<ul>
-					<li>Login page UI</li>
-				</ul>
-			<h5>Changed</h5>
-				<ul>
-					<li>Models.py file to store the capacity for each file on our database</li>
-					<li>Help page to give more information to the user</li>
-					<li>HTML file for each file so that a fourth column displays the free capacity</li>
-					<li>ImportJson.py now adds the capacity info to the file objects in the database</li>
-				</ul>
-			<hr>
-			<h4 class="version">Version 0.6 (11-27-2018)</h4>
-			<h5>Added</h5>
-				<ul>
-					<li>Script to create users to access the database</li>
-					<li>Login authentication to work with created users</li>
-					<li>Tenant authorization so that a user can only access their own systems</li>
-				</ul>
-			<hr>
-			<h4 class="version">Version 0.5 (11-08-2018)</h4>
-			<h5>Added</h5>
-				<ul>
-					<li>Functionality to the navigation bar, the buttons can now be pressed and 
-						actually do something</li>
-					<li>Basic login.html file to reflect the design of the original login page</li>
-					<li>More white box testing for both the models.py and views.py</li>
-				</ul>
-			<h5>Changed</h5>
-				<ul>
-					<li>The JS and HTML files for the files page to display the dates in the appropriate format</li>
-					<li>The files page was changed to display the system and company info</li>
-				</ul>
-			<hr>
-			<h4 class="version">Version 0.4 (10-31-2018)</h4>
-			<h5>Added</h5>
-				<ul>
-					<li>First white box tests were added into the tests.py file for Django's testing suite</li>
-				</ul>
-			<h5>Changed</h5>
-				<ul>
-					<li>importJson.py will now work with all OS types</li>
-					<li>files_page.html bug was fixed so search bar does not overflow over the card</li>
-					<li>urls.py to reflect the appropriate url names</li>
-					<li>views.py to use the generic list view provided by Django</li>
-					<li>Updated the systems_page.html file to no longer contain all the CSS code</li>
-				</ul>
-			<hr>
-			<h4 class="version">Version 0.3 (10-26-2018)</h4>
-			<h5>Added</h5>
-				<ul>
-					<li>System and file page HTML mockups to better represent the original design of the website</li>
-					<li>Help page to tell the user how to use the website</li>
-					<li>Dynamic page template based off of the HTML mockups previously mentioned</li>
-				</ul>
-			<h5>Changed</h5>
-				<ul>
-					<li>views.py and urls.py to reflect the addition of the help page</li>
-				</ul>
-			<hr>
-			<h4 class="version">Version 0.2 (10-18-2018)</h4>
-			<h5>Added</h5>
-				<ul>
-					<li>importJson.py script to allow for us to easily import json files into the database</li>
-					<li>tests.py to allow for automated testing using Django's testing suite</li>
-				</ul>
-			<h5>Changed</h5>
-				<ul>
-					<li>Django models.py file to reflect our design for the database</li>
-					<li>Django manage.py file to handle the exception of importJson not working</li>
-					<li>Django urls.py to contain the correct urls for our website</li>
-					<li>Django settings.py to add the PostgreSQL database</li>
-					<li>Django views.py to contain the appropriate view for both file and systems pages</li>
-				</ul>
-			<hr>
-			<h4 class="version">Version 0.1 (10-12-2018)</h4>
-			<h5>Added</h5>
-				<ul>
-					<li>Basic base HTML file to outline the design of our website</li>
-					<li>Basic Django file structure</li>
-					<li>Support files for DataTables, JQuery and Bootstrap</li>
-					<li>Navigation bar HTML file</li>
-				</ul>			
+			<h4>Capacity Alert</h4>
+			<p>
+				You may notice that some cells for the free capacity are colored in different in 
+				different shades of red. This is to show how much capacity is left on a specific 
+				system. The darker red color, the closer to 0% free capacity is left on the system.
+				The ligher the red color the closer to 30% free capacity is left on the system. Any
+				system that has more than 30% free capacity will be colored white. 
+			</p>
 		</div>
 	</div>
 </div>
