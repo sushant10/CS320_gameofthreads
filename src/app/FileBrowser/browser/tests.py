@@ -42,29 +42,38 @@ class ModelsTests(TestCase):
 		Create objects that are put into a separate testing database
 		"""
 		self.system1212 = System.objects.create(serialNumberInserv= "1212",
-												name= "Mr. Wu")
+												name= "Mr. Wu",
+												tenants = ["hpe"],
+												recentDate = parse_date("2018-10-26"),
+												capacity = 47.295)
 
 		self.file1212_2018_09_09 = File.objects.create(FileID= "121220180909", 
 														name= "1212-2018-09-09.json", 
 														filePath= "files/1212-2018-09-09.json", 
-														dataDate= parse_date("2018-09-09"), 
+														dataDate= parse_date("2018-09-09"),
+							       							capacity = 47.295,  
 														SystemID= self.system1212)
 
 		self.file1212_2018_10_26 = File.objects.create(FileID= "121220181026", 
 														name= "1212-2018-10-26.json", 
 														filePath= "files/1212-2018-10-26.json", 
-														dataDate= parse_date("2018-10-26"), 
+														dataDate= parse_date("2018-10-26"),
+							       							capacity = 47.295, 
 														SystemID= self.system1212)
 
 
 
 		self.system79806 = System.objects.create(serialNumberInserv= "79806",
-												 name= "Echo")
+												 name= "Echo",
+												 tenants = [ "1225102856", "hpe" ],
+												 recentDate = parse_date("2018-09-09"),
+												 capacity = 51.417)
 
 		self.file79806_2018_09_09 = File.objects.create(FileID= "7980620180909", 
 														name= "79806-2018-09-09.json", 
 														filePath= "files/79806-2018-09-09.json", 
-														dataDate= parse_date("2018-09-09"), 
+														dataDate= parse_date("2018-09-09"),
+								 						capacity = 51.417
 														SystemID= self.system79806)
 
 
@@ -123,7 +132,8 @@ class ModelsTests(TestCase):
 			newFile = File.objects.create(FileID= "7980620180909", 
 											name= "79806-2018-09-09.json", 
 											filePath= "files/79806-2018-09-09.json", 
-											dataDate= parse_date("2018-09-09"), 
+											dataDate= parse_date("2018-09-09"),
+						       					capacity = 51.417
 											SystemID= self.system79806)
 			self.assertFalse(True)
 		except:
@@ -139,12 +149,16 @@ class ViewsTests(TestCase):
 		Create objects that are put into a separate testing database
 		"""
 		self.system1212 = System.objects.create(serialNumberInserv= "1212",
-												name= "Mr. Wu")
+												name= "Mr. Wu",
+												tenants = ["hpe"],
+												recentDate = parse_date("2018-10-26"),
+												capacity = 47.295)
 
 		self.file1212_2018_09_09 = File.objects.create(FileID= "121220180909", 
 														name= "1212-2018-09-09.json", 
 														filePath= "files/1212-2018-09-09.json", 
-														dataDate= parse_date("2018-09-09"), 
+														dataDate= parse_date("2018-09-09"),
+							       							capacity = 47.295
 														SystemID= self.system1212)
 
 	def test_simple_system_view(self):
@@ -153,7 +167,7 @@ class ViewsTests(TestCase):
 
 		NOTE: This could be subject to change as the URL to get to the systems page is currently just /browser
 		"""
-		response = self.client.get('/browser', follow=True)
+		response = self.client.get('/browser/login', follow=True)
 		self.assertEqual(response.status_code, 200)
 
 
