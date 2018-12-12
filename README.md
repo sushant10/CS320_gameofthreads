@@ -3,8 +3,6 @@
 ### Product Vision Statement
 For HPE support users who need to download specific HPE system files, FileSublime is a file browser that provides access to raw support files, previously only indirectly available through other support tools. Our product is a simple and direct way to retrieve raw data.
 
-FileSublime is used to filter through specific Json files which contain certain identifying information, such as system and date.
-
 ### Technologies Used
 - *[Bootstrap] Version: 4.1.3*
 - *[JQuery] Version: 3.3.1*
