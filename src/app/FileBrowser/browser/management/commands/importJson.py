@@ -67,7 +67,7 @@ def importJson(app, tarFolder):
             ID = (file.split('.')[0]).replace('-','')
             datestring = "-".join(file.split('-')[1:]).split('.')[0]
             datadate = parse_date(datestring)
-            systemID = file.split('-')[0]
+            systemID = int(file.split('-')[0])
             companyName = j['system']['companyName']
             tenants = j['authorized']['tenants']
             freePct = round(j['capacity']['total']['freePct'], 3)
