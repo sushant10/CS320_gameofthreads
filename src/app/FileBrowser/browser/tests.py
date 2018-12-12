@@ -32,7 +32,7 @@ class helper():
 		if sys1 == None or sys2 == None:
 			return False
 
-		return (str(sys1.serialNumberInserv) == str(sys2.serialNumberInserv)) and (sys1.name == sys2.name)
+		return (sys1.serialNumberInserv == sys2.serialNumberInserv) and (sys1.name == sys2.name)
 
 
 class ModelsTests(TestCase):
@@ -41,7 +41,7 @@ class ModelsTests(TestCase):
 		"""
 		Create objects that are put into a separate testing database
 		"""
-		self.system1212 = System.objects.create(serialNumberInserv= "1212",
+		self.system1212 = System.objects.create(serialNumberInserv= 1212,
 												name= "Mr. Wu",
 												tenants = ["hpe"],
 												recentDate = parse_date("2018-10-26"),
@@ -63,7 +63,7 @@ class ModelsTests(TestCase):
 
 
 
-		self.system79806 = System.objects.create(serialNumberInserv= "79806",
+		self.system79806 = System.objects.create(serialNumberInserv= 79806,
 												 name= "Echo",
 												 tenants = [ "1225102856", "hpe" ],
 												 recentDate = parse_date("2018-09-09"),
@@ -73,7 +73,7 @@ class ModelsTests(TestCase):
 														name= "79806-2018-09-09.json", 
 														filePath= "files/79806-2018-09-09.json", 
 														dataDate= parse_date("2018-09-09"),
-								 						capacity = 51.417
+								 						capacity = 51.417,
 														SystemID= self.system79806)
 
 
@@ -119,7 +119,7 @@ class ModelsTests(TestCase):
 		
 		try:
 			# Try to create a system using an existing primary key, if created fail the test
-			newSys = System.objects.create(serialNumberInserv= "79806",
+			newSys = System.objects.create(serialNumberInserv= 79806,
 												 name= "Copy")
 			self.assertFalse(True)
 		except:
@@ -133,7 +133,7 @@ class ModelsTests(TestCase):
 											name= "79806-2018-09-09.json", 
 											filePath= "files/79806-2018-09-09.json", 
 											dataDate= parse_date("2018-09-09"),
-						       					capacity = 51.417
+						       				capacity = 51.417,
 											SystemID= self.system79806)
 			self.assertFalse(True)
 		except:
@@ -148,17 +148,17 @@ class ViewsTests(TestCase):
 		"""
 		Create objects that are put into a separate testing database
 		"""
-		self.system1212 = System.objects.create(serialNumberInserv= "1212",
+		self.system1212 = System.objects.create(serialNumberInserv= 1212,
 												name= "Mr. Wu",
 												tenants = ["hpe"],
 												recentDate = parse_date("2018-10-26"),
 												capacity = 47.295)
 
-		self.file1212_2018_09_09 = File.objects.create(FileID= "121220180909", 
+		self.file1212_2018_09_09 = File.objects.create(FileID= 121220180909, 
 														name= "1212-2018-09-09.json", 
 														filePath= "files/1212-2018-09-09.json", 
 														dataDate= parse_date("2018-09-09"),
-							       							capacity = 47.295
+							       						capacity = 47.295,
 														SystemID= self.system1212)
 
 	def test_simple_system_view(self):
