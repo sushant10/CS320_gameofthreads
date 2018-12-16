@@ -7,6 +7,7 @@ $(document).ready(function(){
 		fixedColumns:   {
 			heightMatch: 'none'
 		},
+		order: 		[[ 0, "desc"]],
 		columns: [
 			{"type": "html"},
 			{"type": "date"},
