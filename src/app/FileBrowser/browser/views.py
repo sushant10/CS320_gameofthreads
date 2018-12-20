@@ -39,15 +39,20 @@ def systems(request):
     if not request.session.has_key('username'):
         return redirect("browser:login")
     username = str(request.session['username'])
-    system_list = System.objects.filter(tenants__contains = [username]).order_by('serialNumberInserv')[:100]
-
+    try:
+        system_list = System.objects.filter(tenants__contains = [username]).order_by('serialNumberInserv')[:100]
+    except:
+        return render(request, 'browser/error.html')
     return render(request, 'browser/systems_page.html', {'system_list' : system_list})
 
 @never_cache
 def files(request, serialNumberInserv):
     if not request.session.has_key('username'):
         return redirect("browser:login")
-    system = get_object_or_404(System, serialNumberInserv=serialNumberInserv)
+    try:
+        system = get_object_or_404(System, serialNumberInserv=serialNumberInserv)
+    except:
+        return render(request, 'browser/error.html')
     tenants = system.tenants
     username = str(request.session['username'])
     if username in tenants:
@@ -62,7 +67,10 @@ def files(request, serialNumberInserv):
 def download(request, fileID):
     if not request.session.has_key('username'):
         return redirect("browser:login")
-    file = get_object_or_404(File, FileID=fileID)
+    try:
+        file = get_object_or_404(File, FileID=fileID)
+    except:
+        return render(request, 'browser/error.html')
     if platform == "linux" or platform == "linux2" or platform == 'darwin':
     # linux or OS X
         f_path = 'browser/static/'
@@ -125,3 +133,7 @@ def logoutView(request):
 @never_cache
 def default(request):
     return redirect("browser:systems")
+
+@never_cache
+def error_page(request):
+    return render(request, 'browser/error.html',status=404)
