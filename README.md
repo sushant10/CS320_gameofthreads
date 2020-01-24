@@ -63,6 +63,12 @@ $ python3 manage.py importJson [app] [TargetFolder]
 $ python3 manage.py add_User [tenant name] [password] admin  
 ```
 
+### Screenshots
+
+<img src="https://github.com/sushant10/CS320_gameofthreads/blob/master/screenshots/screen_login.png" width="900" height="540" />
+<img src="https://github.com/sushant10/CS320_gameofthreads/blob/master/screenshots/screen_files.png" width="900" height="540" />
+<img src="https://github.com/sushant10/CS320_gameofthreads/blob/master/screenshots/screen_systems.png" width="900" height="540" />
+
 ### Contributers/Team
 - [Ian Birle](https://github.com/ibirle)
 - [Joseph Blake](https://github.com/josephblake8424)
